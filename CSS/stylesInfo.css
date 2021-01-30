@@ -1,0 +1,369 @@
+/* fonts
+Font-Family: 'Cormorant Garamond', Serif;
+Font-Size: 55px;
+Font-Family: 'Fira Sans', Sans-Serif;
+Font-Size: 15px; */
+
+/* @media (min-width: 768px)  and (orientation: landscape) */
+.blue {
+  background-color: #5e93acab;
+}
+.yellow {
+  background-color: rgba(231, 196, 107, 0.829);
+}
+.grey {
+  background-color: #728ea6e3;
+}
+.brown {
+  background-color: #59482C;
+}
+
+@keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+
+
+h1 {
+  Font-Family: 'Cormorant Garamond', Serif;
+}
+
+p {
+  Font-Family: 'Fira Sans', Sans-Serif;
+}
+
+body {
+  background-image: url(../media/6.PNG);
+  background-position: center;
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+  height: 2500px;
+}
+
+@media (min-width: 768px) and (orientation: landscape) {
+  body {
+    background-image: url(../media/6.PNG);
+    background-position: center;
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+    height: 1500px;
+  }
+}
+
+
+
+/* grid container */
+.containerMain {
+  display: grid;
+  grid-template-columns: repeat(24, 1fr) ;
+  grid-template-rows: repeat(2, 1fr) repeat(14, 130px) repeat(2, 1fr);
+  height: 2500px;
+  width: 100%;
+}
+
+/* for desktop */
+@media (min-width: 768px)  and (orientation: landscape) {
+  .containerMain {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr) repeat(14, 55px) repeat(5, 1fr) ;
+    grid-template-rows: repeat(4, 1fr) repeat(15, 30px) repeat(4, 1fr);
+    height: 1500px;
+    width: 100%;
+  }
+}
+
+/* home icon */
+.home {
+  grid-column: 7/ span 2;  
+  grid-row: 2 / span 1;
+  z-index: 5;
+  padding: 10px;
+  text-align: left;
+
+  -webkit-animation: fadein 4s; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadein 4s; /* Firefox < 16 */
+   -ms-animation: fadein 4s; /* Internet Explorer */
+    -o-animation: fadein 4s; /* Opera < 12.1 */
+       animation: fadein 4s;
+}
+.homeIcon {
+  margin: 0%;
+  height: 30px;
+  padding: 4px 2px 4px 2px;
+}
+
+
+/* social icons on the top right of the main box  */
+.social {
+  grid-column: 16/ span 3;  
+  grid-row: 2 / span 1;
+  text-align: right;
+  background-color: transparent;
+  z-index: 5;
+  padding: 10px;
+
+  -webkit-animation: fadein 4s; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadein 4s; /* Firefox < 16 */
+   -ms-animation: fadein 4s; /* Internet Explorer */
+    -o-animation: fadein 4s; /* Opera < 12.1 */
+       animation: fadein 4s;
+}
+.socialIcon {
+  margin: 0%;
+  height: 30px;
+  padding: 4px 2px 4px 2px;
+}
+
+/* social icons on the top right of the main box  */
+@media (min-width: 768px) and (orientation: landscape) {
+  .social {
+    grid-column: 16/ span 3;  
+    grid-row: 2 / span 1;
+    text-align: right;
+    background-color: transparent;
+    padding: 10px;
+  }
+}
+
+/* main box with name */
+/* for phone /ipad */
+.item1 {
+  grid-column: 6/ span 14;
+  grid-row: 2 / span 13;
+  background-color: #c9d2d3a6;
+  margin: 0%;
+  padding: 50px 20px;
+  text-align: center;
+
+  -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadein 2s; /* Firefox < 16 */
+   -ms-animation: fadein 2s; /* Internet Explorer */
+    -o-animation: fadein 2s; /* Opera < 12.1 */
+       animation: fadein 2s;
+}
+
+.item1 h1 {
+  margin: 0%;
+  padding: 30px 15px;
+  text-align: center;
+  font-size: 55px;
+  letter-spacing: 2px;
+  color: #382e1d; 
+}
+
+.item1 p {
+  margin: 0%;
+  padding: 30px 15px;
+  text-align: justify;
+  font-size: 25px;
+  line-height: 40px;
+}
+
+.bike {
+  margin: 0% auto;
+  width: 500px;
+  /* margin: auto; */
+  padding: 10px 5px;
+}
+
+#bikeMobile {
+  display: inline;
+}
+#bikeDesk {
+  display: none;
+}
+
+/* for desktop */
+@media (min-width: 768px) and (orientation: landscape) {
+  .item1 {
+    grid-column: 7/ span 12;
+    grid-row: 2 / span 19;
+
+    margin: 0%;
+    padding: 50px 20px;
+  }
+  .item1 h1 {
+    margin: 0%;
+    padding: 0px 30px 15px 30px;
+    text-align: center;
+    /* text-transform: uppercase; */
+    letter-spacing: 2px;
+    color: #382e1d; 
+    font-size: 60px;
+  }
+
+  .item1 p {
+    margin: 0%;
+    padding: 10px 30px 5px 30px;
+    text-align: justify;
+    line-height: 30px;
+    font-size: 15px;
+  }
+
+  .item1 {
+    text-align: center;
+  }
+  .bike {
+    width: 555px;
+    margin: auto;
+    padding: 20px 0px;
+  }
+  /* .name {
+    grid-column: 7/ span 12;
+    grid-row: 4 / span 1;
+    z-index: 5;
+  } */
+  #bikeMobile {
+    display: none;
+  }
+  #bikeDesk {
+    display: inline;
+  }
+
+}
+
+
+/* contact box on the right or bottom in mobile version */
+.contactMob {
+  display: inline-block;
+}
+.contactDesk {
+  display: none; 
+}
+
+.item3 {
+  grid-column: 6 / span 14;
+  grid-row: 16 / span 1;
+  color: #2f3a44;
+  background-color: #728ea6de;
+  line-height: 130px;
+  text-transform: capitalize;
+  font-size: 50px;
+  text-align: center;
+  /* font-weight: 600; */
+  text-decoration: none;
+  /* Font-Family: 'Fira Sans', Sans-Serif; */
+  font-family: 'Cormorant Garamond', Serif;
+  transition: color 1s, background-color 2s;
+}
+
+.item3:hover {
+  color: #0b0d0f;
+  background-color: #637a8f;
+}
+
+/* fade in for the main container on the index page */
+.item3 {
+  -webkit-animation: fadein 4s; /* Safari, Chrome and Opera > 12.1 */
+     -moz-animation: fadein 4s; /* Firefox < 16 */
+      -ms-animation: fadein 4s; /* Internet Explorer */
+       -o-animation: fadein 4s; /* Opera < 12.1 */
+          animation: fadein 4s;
+}
+
+
+
+
+
+/* for desktop */
+@media (min-width: 768px) and (orientation: landscape){
+  .contactMob {
+    display: none;
+  }
+  .contactDesk {
+   display: inline-block; 
+  }
+  .item3 {
+  
+    grid-column: 19/ span 1;
+    grid-row: 5 / span 5;
+    color: #2f3a44;
+    /* color: white; */
+    /* background-color: #a1c1ddde; */
+    background-color: #728ea6de;
+    margin: 0%;
+    padding-top: 35px;
+    line-height: 16px;
+    text-transform: capitalize;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    text-align: center;
+    Font-Family: 'Fira Sans', Sans-Serif;
+    /* font-family: 'Cormorant Garamond', Serif; */
+  }  
+}
+
+
+/* the yellow gallery box on the bottom */
+.item4 {
+  grid-column: 6 / span 14;
+  grid-row: 15 / span 1;
+  background-color: rgba(231, 196, 107, 0.829);
+  color:  rgb(73, 62, 34);
+  font-size: 53px;
+  text-decoration: none;
+  text-align: center;
+  font-family: 'Cormorant Garamond', Serif;
+  line-height: 130px;
+  letter-spacing: 5px;
+
+  -webkit-animation: fadein 3s; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadein 3s; /* Firefox < 16 */
+   -ms-animation: fadein 3s; /* Internet Explorer */
+    -o-animation: fadein 3s; /* Opera < 12.1 */
+       animation: fadein 3s;
+
+  transition: color 1s, background-color 2s;
+}
+
+.item4:hover {
+  color:  rgb(12, 10, 6);
+  background-color: rgba(211, 179, 100, 0.966);
+}
+
+
+
+/* for desktop */
+@media (min-width: 768px)  and (orientation: landscape) {
+  .item4 {
+    display: inline-block;
+    grid-column: 13/ span 5;
+    grid-row: 11 / span 2;
+    text-transform: capitalize;
+    font-size: 30px;
+    text-decoration: none;
+    text-align: center;
+    /* Font-Family: 'Fira Sans', Sans-Serif; */
+    font-family: 'Cormorant Garamond', Serif;
+    line-height: 70px;
+    letter-spacing: 5px;
+  }
+}
+
+
+
+
+
+
+
+
