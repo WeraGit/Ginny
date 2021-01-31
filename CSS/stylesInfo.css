@@ -183,7 +183,8 @@ body {
   text-align: center;
   font-size: 55px;
   letter-spacing: 2px;
-  color: #382e1d; 
+  /* color: #382e1d;  */
+  color: #162024;
 }
 
 .item1 p {
@@ -192,6 +193,7 @@ body {
   text-align: justify;
   font-size: 25px;
   line-height: 40px;
+  color: #162024;
 }
 
 .bike {
@@ -223,7 +225,8 @@ body {
     text-align: center;
     /* text-transform: uppercase; */
     letter-spacing: 2px;
-    color: #382e1d; 
+    /* color: #382e1d;  */
+    
     font-size: 60px;
   }
 
@@ -377,6 +380,55 @@ body {
 
 
 
+
+.foot {
+  grid-column: 1 / span 24;
+  grid-row: 18 / span 1;
+  background-image: linear-gradient(to bottom, #c9d2d300, #dce3e4);
+  color: black;
+  text-align: center;
+}
+.footerTxt {
+  padding: 3% 0% 0% 0%;
+  /* font-weight: bold; */
+  font-size: 16px;
+}
+@media (min-width: 768px)  and (orientation: landscape) {
+  .foot {
+    grid-column: 1 / span 24;
+    grid-row: 32 / span 2;
+  }
+
+  .footerTxt {
+    padding: 2% 0% 0% 0%;
+    /* font-weight: bold; */
+    font-size: 16px;
+  }
+}
+
+.signature {
+  grid-column: 20 / span 8;
+  grid-row: 18 / span 1;
+  color: black;
+  text-align: right;
+  Font-Family: 'Fira Sans', Sans-Serif;
+  font-size: 16px;
+  margin-right: 2%;
+}
+
+#sigImage {
+  height: 50px;
+  display: inline-block;
+  margin-bottom: -1%;
+}
+@media (min-width: 768px)  and (orientation: landscape) {
+  .signature {
+    grid-column: 1 / span 24;
+    grid-row: 32 / span 2;
+  }
+
+  
+}
 
 
 
