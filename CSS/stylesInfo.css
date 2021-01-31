@@ -389,46 +389,23 @@ body {
   text-align: center;
 }
 .footerTxt {
-  padding: 5% 0% 0% 0%;
+  padding: 6% 0% 0% 0%;
   /* font-weight: bold; */
   font-size: 20px;
+}
+#sigImage {
+  height: 50px;
+  display: inline-block;
+  margin-bottom: -1%;
 }
 @media (min-width: 768px)  and (orientation: landscape) {
   .foot {
     grid-column: 1 / span 24;
     grid-row: 32 / span 2;
   }
-
   .footerTxt {
-    padding: 2% 0% 0% 0%;
+    padding: 3% 0% 0% 0%;
     /* font-weight: bold; */
     font-size: 16px;
   }
 }
-
-/* .signature {
-  grid-column: 20 / span 8;
-  grid-row: 18 / span 1;
-  color: black;
-  text-align: right;
-  Font-Family: 'Fira Sans', Sans-Serif;
-  font-size: 16px;
-  margin-right: 2%;
-} */
-
-#sigImage {
-  height: 50px;
-  display: inline-block;
-  margin-bottom: -1%;
-}
-/* @media (min-width: 768px)  and (orientation: landscape) {
-  .signature {
-    grid-column: 1 / span 24;
-    grid-row: 32 / span 2;
-  }  
-} */
-
-
-
-
-

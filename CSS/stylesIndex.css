@@ -393,7 +393,7 @@ body {
 .foot {
   grid-column: 1 / span 24;
   grid-row: 14 / span 1;
-  background-image: linear-gradient(to bottom, #c9d2d300, #b3c9cc);
+  background-image: linear-gradient(to bottom, #c9d2d300, #7799B6);
   color: black;
   text-align: center;
 }
