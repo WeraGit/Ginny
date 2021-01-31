@@ -389,9 +389,9 @@ body {
   text-align: center;
 }
 .footerTxt {
-  padding: 3% 0% 0% 0%;
+  padding: 5% 0% 0% 0%;
   /* font-weight: bold; */
-  font-size: 16px;
+  font-size: 20px;
 }
 @media (min-width: 768px)  and (orientation: landscape) {
   .foot {
@@ -406,7 +406,7 @@ body {
   }
 }
 
-.signature {
+/* .signature {
   grid-column: 20 / span 8;
   grid-row: 18 / span 1;
   color: black;
@@ -414,21 +414,19 @@ body {
   Font-Family: 'Fira Sans', Sans-Serif;
   font-size: 16px;
   margin-right: 2%;
-}
+} */
 
 #sigImage {
   height: 50px;
   display: inline-block;
   margin-bottom: -1%;
 }
-@media (min-width: 768px)  and (orientation: landscape) {
+/* @media (min-width: 768px)  and (orientation: landscape) {
   .signature {
     grid-column: 1 / span 24;
     grid-row: 32 / span 2;
-  }
-
-  
-}
+  }  
+} */
 
 
 
