@@ -390,6 +390,40 @@ body {
 
 
 
+.foot {
+  grid-column: 1 / span 24;
+  grid-row: 14 / span 1;
+  background-image: linear-gradient(to bottom, #c9d2d300, #b3c9cc);
+  color: black;
+  text-align: center;
+}
+.footerTxt {
+  padding: 5% 0% 0% 0%;
+  /* font-weight: bold; */
+  font-size: 20px;
+}
+#sigImage {
+  height: 50px;
+  display: inline-block;
+  margin-bottom: -1%;
+}
+@media (min-width: 768px)  and (orientation: landscape) {
+  .foot {
+    display: none;
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 
