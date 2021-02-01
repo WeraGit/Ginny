@@ -49,7 +49,7 @@ body {
   background-position: center;
   background-repeat: no-repeat; /* Do not repeat the image */
   background-size: cover; /* Resize the background image to cover the entire container */
-  height: 2000px;
+  height: 2150px;
 }
 
 @media (min-width: 768px)  and (orientation: landscape) {
@@ -67,7 +67,7 @@ body {
   display: grid;
   grid-template-columns: repeat(24, 1fr) ;
   grid-template-rows: repeat(2, 1fr) repeat(14, 100px) repeat(2, 1fr);
-  height: 2000px;
+  height: 2150px;
   width: 100%;
 }
 
@@ -124,13 +124,14 @@ body {
 
 .socialIcon {
   height: 30px;
-  /* background-color: #a6bbced2; */
-  padding: 2px;
+  padding: 2px;  
+  margin-bottom: -9px;
 }
 
 .mailIcon, .phoneIcon {
   height: 20px;
-  padding: 2px;
+  padding: 2px;  
+  margin-bottom: -4px;
 }
 
 
@@ -322,8 +323,8 @@ input, textarea {
 .foot {
   grid-column: 1 / span 24;
   grid-row: 24 / span 1;
-  /* background-image: linear-gradient(to bottom, #c9d2d300,#575757); */
-  background-image: linear-gradient(to bottom, #c9d2d300, #574B3A);
+  background-image: linear-gradient(to bottom, #c9d2d300, #a8ac5896);
+  /* background-image: linear-gradient(to bottom, #c9d2d300, #705838ca); */
   color: black;
   text-align: center;
 }
