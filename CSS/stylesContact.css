@@ -323,7 +323,7 @@ input, textarea {
 .foot {
   grid-column: 1 / span 24;
   grid-row: 24 / span 1;
-  background-image: linear-gradient(to bottom, #c9d2d300, #a8ac5896);
+  background-image: linear-gradient(to bottom, #c9d2d300, #d9d2b0a6);
   /* background-image: linear-gradient(to bottom, #c9d2d300, #705838ca); */
   color: black;
   text-align: center;
