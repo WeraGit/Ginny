@@ -168,7 +168,7 @@ body {
 
 .item1 h1 {
   margin: 40px 0% 0% 0%;
-  padding: 15px 5px;
+  padding: 13px 5px 15px 5px;
   text-align: center;
   font-size: 55px;
   letter-spacing: 2px;
@@ -178,7 +178,7 @@ body {
 
 .item1 p {
   margin: 0%;
-  padding: 15px 15px 15px 15px;
+  padding: 13px 15px 13px 15px;
   text-align: justify;
   font-size: 25px;
   line-height: 35px;
@@ -192,7 +192,6 @@ body {
   .item1 {
     grid-column: 12/ span 9;
     grid-row: 5 / span 9;
-
     margin: 0%;
     padding: 30px 20px 30px 30px;
   }
@@ -204,7 +203,6 @@ body {
     letter-spacing: 2px;
     color: #382e1d; 
     font-size: 35px;
-
   }
   .item1 p {
     margin: 0%;
@@ -220,12 +218,10 @@ body {
   .mobile {
     display: none;
   }
-
 }
 
 
 /* contact box on the right or bottom in mobile version */
-
 .item3 {
   grid-column: 6 / span 14;
   grid-row: 10 / span 6;
@@ -243,6 +239,13 @@ body {
 }
 .item3:hover {
   background-color: #778c92f6;
+}
+.item3 h1 {
+  margin: 40px 0% 0% 0%;
+  padding: 18px 5px 18px 5px;
+  text-align: center;
+  font-size: 55px;
+  letter-spacing: 2px;
 }
 
 /* for desktop */
@@ -267,15 +270,14 @@ body {
 .contactForm {
   background-color: transparent;
 }
-
 label, input, textarea {
   display: block;
-  margin: 10px 0px 3px 32px;
+  margin: 20px 0px 20px 90px;
   padding: 9px 3px;
   Font-Family: 'Fira Sans', Sans-Serif;
   font-size: 16px;
-  width: 240px;
-  line-height: 17px;
+  width: 400px;
+  line-height: 22px;
   border: none;
   color: black;
 }
@@ -287,23 +289,41 @@ input, textarea {
   color: rgba(0, 0, 0, 0.753);
 }
 #message {
-  height: 90px;
-  /* width: 270px;
-  margin: 10px 0px 3px 20px; */
+  height:110px;
 }
 .contactSubmit {
-  margin: 20px 0px 0px 85px;
+  margin: 40px 0px 0px 222px;
   background-color: rgba(231, 196, 107, 0.829);
   width: 140px;
   Font-Family: 'Cormorant Garamond', Serif;
   font-size: 20px;
   letter-spacing: 3px;
 }
-
+/* for desktop */
+@media (min-width: 768px) and (orientation: landscape){
+  label, input, textarea {
+    margin: 10px 0px 3px 32px;
+    padding: 9px 3px;
+    Font-Family: 'Fira Sans', Sans-Serif;
+    font-size: 16px;
+    width: 240px;
+    line-height: 17px;
+  }  
+  #message {
+    height: 90px;
+  }
+  .contactSubmit {
+    margin: 20px 0px 0px 85px;
+    width: 140px;
+    font-size: 25px;
+    letter-spacing: 3px;
+  }
+}
 .foot {
   grid-column: 1 / span 24;
   grid-row: 24 / span 1;
-  background-image: linear-gradient(to bottom, #c9d2d300, #7799B6);
+  /* background-image: linear-gradient(to bottom, #c9d2d300,#575757); */
+  background-image: linear-gradient(to bottom, #c9d2d300, #574B3A);
   color: black;
   text-align: center;
 }
