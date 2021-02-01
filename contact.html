@@ -14,70 +14,73 @@
 <body>
 <!-- container for the grid -->
 <div class="containerMain">
-
-  <!-- home icon LEFT -->
+<!-- 
+  home icon LEFT -->
   <div class="home">
     <a href="index.html"><img class="homeIcon" src="./media/home.png" ></a>
   </div>
 
   <!-- main box -->
   <div class="item1"> 
-
-    <!-- <h1>Contact</h1> -->
-
-    <p>
-      <p>
-        For images of available works and a price list, 
-        contact me directly or send a message via the form on the left. 
-      </p>
+    <h1 class="mobile">Contact</h1>
+    <p id="contactTxt">
+      For images of available works and a price list, 
+      contact me directly or send a message via the form. 
+    </p>
+    <br>
+    <!-- social media links -->
+    <p class="social">
+      <a href="https://www.facebook.com/virginia.whiting.1"><img class="socialIcon" src="media/face.webp"></a>
+      &nbsp;facebook account
       <br>
-      <!-- social media links -->
-      <p class="social">
-        <a href="https://www.facebook.com/virginia.whiting.1"><img class="socialIcon" src="media/face.webp"></a>
-        facebook account
-        <br>
-        <a href="https://z-p42.www.instagram.com/virginiawhiting/"><img class="socialIcon" src="media/insta.webp"></a>
-        instagram account
-        <br>
-        <img class="socialIcon" src="media/insta.webp"> 
-        ginnywhiting@btinternet.com
-        <br>
-        <img class="socialIcon" src="media/insta.webp"> 
-        07799 528 148
-      </p>
+      <a href="https://z-p42.www.instagram.com/virginiawhiting/"><img class="socialIcon" src="media/insta.webp"></a>
+      &nbsp;instagram account
+      <br>
+      <a href="mailto:ginnywhiting@btinternet.com"><img class="mailIcon" src="media/mail.png"></a>
+      &nbsp;&nbsp;ginnywhiting@btinternet.com
+      <br>
+      &nbsp;<img class="phoneIcon" src="media/phone.png"> 
+      &nbsp;&nbsp;07799 528 148
     </p>
   </div>
 
-  <!-- contact boxes -->
-  <div class="item3 grey contactMob" >     
-    <h1>Contact</h1>
+  <!-- contact form box -->
 
+  <div class="item3">     
+    <h1>Contact &nbsp;form</h1>   
+
+    <form class="contactForm" method="post" action="./mail.php">
+          
+      <!-- <label for="name">Your Name: </label> -->
+      <input type="text" name="name" placeholder="Name *" id="name" required>
+
+      <!-- <label for="email">Your Email: </label> -->
+      <input type="email" name="email" placeholder="Email *" id="email" required>
+
+      <!-- <label for="subject">Subject: </label> -->
+      <input type="text" name="subject" placeholder="Subject" id="subject">
+
+      <!-- <label for="message">Message: </label> -->
+      <textarea name="message" placeholder="Message" id="message"></textarea>
+
+      <input type="submit" class="contactSubmit" value="Send">
+  </form>
   </div>
 
-  <div class="item3 grey contactDesk">     
-    <h1>Contact form</h1>   
-    name 
-    <br><br><br>
-    email
-    <br><br><br>
-    subject
-    <br><br><br>
-    message
-    <br><br><br><br>
-    <br>
-    <br>
-    <br>
-    <br>
-    send
-  </div>
-
-
-  <!-- gallery box -->
-  <a class="item4 " href="gallery.html">
-    Gallery
-  </a>
-
-  
+  <footer class="foot">
+    <p class="footerTxt">      
+      
+      2021 &nbsp; Virginia Whiting &nbsp; &#169  
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <!-- <br> -->
+      + &nbsp;website made by 
+      &nbsp;&nbsp;
+      <a href="https://limberger.co.uk/">
+        <img id="sigImage" src="./media/Signature Black.png"></a>
+      &nbsp; &#169 
+    </p>
+  </footer>
 </div>
 
 </body>
