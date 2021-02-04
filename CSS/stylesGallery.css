@@ -49,8 +49,8 @@ body {
 .containerMain {
   display: grid;
   grid-template-columns: repeat(24, 1fr) ;
-  grid-template-rows: repeat(2, 1fr) repeat(65, 50px) repeat(2, 1fr);
-  height: 3500px;
+  grid-template-rows: repeat(2, 1fr) repeat(50, 50px) repeat(2, 1fr);
+  height: 2750px;
   width: 100%;
 }
 
@@ -119,6 +119,7 @@ body {
     grid-row: 2 / span 4;
     margin: 0%;
     padding: 30px 20px;
+    line-height: normal;
   }
   .item1 h1 {
     margin: 0%;
