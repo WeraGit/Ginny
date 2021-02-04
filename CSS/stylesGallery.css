@@ -49,8 +49,8 @@ body {
 .containerMain {
   display: grid;
   grid-template-columns: repeat(24, 1fr) ;
-  grid-template-rows: repeat(2, 1fr) repeat(14, 130px) repeat(2, 1fr);
-  height: 2500px;
+  grid-template-rows: repeat(2, 1fr) repeat(65, 50px) repeat(2, 1fr);
+  height: 3500px;
   width: 100%;
 }
 
@@ -67,7 +67,7 @@ body {
 
 .banner {
   grid-column: 1/ span 24;  
-  grid-row: 1 / span 3;
+  grid-row: 1 / span 9;
   background-image: url(../media/1.jpeg);
   background-position: center;
   background-repeat: no-repeat; 
@@ -88,11 +88,12 @@ body {
 
 .item1 {
   grid-column: 7/ span 12;
-  grid-row: 4 / span 5;
+  grid-row: 3 / span 4;
   background-color: #d9cdb8df;
   color: #59482C;   
   margin: 0%;
-  padding: 50px 20px;
+  /* padding: 50px 20px; */
+  line-height: 200px;
 
   -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
   -moz-animation: fadein 2s; /* Firefox < 16 */
@@ -102,9 +103,9 @@ body {
 }
 .item1 h1 {
   margin: 0%;
-  padding: 7% 5%;
+  /* padding: 7% 5%; */
   text-align: center;
-  font-size: 55px;
+  font-size: 65px;
   letter-spacing: 2px;
   color: #382e1d; 
   transition: background-color 2s;
@@ -131,7 +132,7 @@ body {
 /* social icons on the top right  */
 .social {
   grid-column: 16/ span 3;  
-  grid-row: 4 / span 2;
+  grid-row: 3 / span 2;
   text-align: right;
   background-color: transparent;
   z-index: 5;
@@ -198,83 +199,18 @@ body {
 }
 
 
-/* contact box on the right or bottom in mobile version */
-.contactMob {
-  display: inline-block;
-}
-.contactDesk {
-  display: none; 
-}
-
-.item3 {
-  grid-column: 7 / span 12;
-  grid-row: 9 / span 1;
-  color: #2f3a44;
-  background-color: #728ea6de;
-  line-height: 130px;
-  text-transform: capitalize;
-  font-size: 50px;
-  text-align: center;
-  text-decoration: none;
-  font-family: 'Cormorant Garamond', Serif;
-  transition: color 1s, background-color 2s;
-}
-
-.item3:hover {
-  color: #0b0d0f;
-  background-color: #637a8f;
-}
-
-/* fade in for the main container on the index page */
-.item3 {
-  -webkit-animation: fadein 4s; /* Safari, Chrome and Opera > 12.1 */
-     -moz-animation: fadein 4s; /* Firefox < 16 */
-      -ms-animation: fadein 4s; /* Internet Explorer */
-       -o-animation: fadein 4s; /* Opera < 12.1 */
-          animation: fadein 4s;
-}
-
-
-
-
-
-/* for desktop */
-@media (min-width: 768px) and (orientation: landscape){
-  .contactMob {
-    display: none;
-  }
-  .contactDesk {
-   display: inline-block; 
-  }
-  .item3 {  
-    grid-column: 19/ span 1;
-    grid-row: 2 / span 1;
-    color: #2f3a44;
-    background-color: #728ea6de;
-    margin: 0%;
-    padding-top: 35px;
-    line-height: 16px;
-    text-transform: capitalize;
-    font-size: 14px;
-    font-weight: 600;
-    text-decoration: none;
-    text-align: center;
-    Font-Family: 'Fira Sans', Sans-Serif;
-  }  
-}
-
 /* the yellow gallery box on the bottom */
 .item4 {
   grid-column: 7 / span 12;
-  grid-row: 8 / span 1;
+  grid-row: 7 / span 2;
   background-color: rgba(231, 196, 107, 0.938);
   color:  rgb(73, 62, 34);
   text-transform: capitalize;
-  font-size: 53px;
+  font-size: 43px;
   text-decoration: none;
   text-align: center;
   font-family: 'Cormorant Garamond', Serif;
-  line-height: 120px;
+  line-height: 100px;
   letter-spacing: 5px;
   transition: color 1s, background-color 2s;
   -webkit-animation: fadein 3s; /* Safari, Chrome and Opera > 12.1 */
@@ -311,7 +247,7 @@ body {
   text-decoration: none;
   color: #2f3a44;
   text-align: center;
-  grid-column: 4 / span 12;
+  grid-column: 6 / span 14;
 }
 
 @media (min-width: 768px)  and (orientation: landscape) {
@@ -321,12 +257,12 @@ body {
 }
 
 .landscapes {
-  grid-row: 9 / span 5;
+  grid-row: 12 / span 8;
   background-image: url(../media/8.PNG);
 }
 
 .landscapeFilm {
-  grid-row: 9 / span 5;
+  grid-row: 12 / span 8;
   z-index: 4;
   background-color: rgba(0, 0, 0, 0.137);
   display: none;
@@ -351,7 +287,7 @@ body {
 }
 
 .seascapes {
-  grid-row: 17 / span 5;
+  grid-row: 22 / span 8;
   background-image: url(../media/9.PNG);
 }
 @media (min-width: 768px)  and (orientation: landscape) {
@@ -369,7 +305,7 @@ body {
 }
 
 .abstract {
-  grid-row: 24 / span 6;
+  grid-row: 32 / span 8;
   background-image: url(../media/10.jpeg);
 }
 @media (min-width: 768px)  and (orientation: landscape) {
@@ -386,7 +322,7 @@ body {
 }
 
 .still {
-  grid-row: 31 / span 5;
+  grid-row: 42 / span 8;
   background-image: url(../media/11.PNG);
 }
 @media (min-width: 768px)  and (orientation: landscape) {
@@ -410,7 +346,7 @@ body {
 
 .foot {
   grid-column: 1 / span 24;
-  grid-row: 14 / span 1;
+  grid-row: 54 / span 1;
   /* background-image: linear-gradient(to bottom, #c9d2d300, #7799B6); */
   color: black;
   text-align: center;
