@@ -31,12 +31,10 @@ Font-Size: 15px; */
 }
 
 
-
 h1 {
   Font-Family: 'Cormorant Garamond', Serif;
   Font-Size: 55px;
 }
-
 p {
   Font-Family: 'Fira Sans', Sans-Serif;
   Font-Size: 15px; 
@@ -49,10 +47,7 @@ body {
   background-repeat: no-repeat; /* Do not repeat the image */
   background-size: cover; /* Resize the background image to cover the entire container */
   height: 100vh;
-
 }
-
-
 
 /* grid container */
 .containerMain {
@@ -63,9 +58,6 @@ body {
   height: 100vh;
   width: 100%;
 }
-
-
-
 
 /* for desktop */
 @media (min-width: 768px)  and (orientation: landscape) {
@@ -105,11 +97,6 @@ body {
 
 /* social icons on the top right  */
 .social {
-  /* grid-column: 22/ span 3;  
-  grid-row: 1 / span 1;
-  text-align: right;
-  background-color: #a6bbced2; */
-
   grid-column: 16/ span 3;  
   grid-row: 4 / span 1;
   text-align: right;
@@ -128,7 +115,6 @@ body {
   /* background-color: #a6bbced2; */
   padding: 2px;
 }
-
 /* social icons on the top right of the main box  */
 @media (min-width: 768px) and (orientation: landscape) {
   .social {
@@ -141,26 +127,6 @@ body {
   }
 }
 
-/* .signature{
-  grid-column: 1/ span 6;  
-  grid-row: 1 / span 1;
-  margin: 0%;
-  padding: 10px;
-  text-align: center;
-}
-
-.signature a {
-  text-align: center;
-}
-
-.signature a img {
-  display: inline-block;
-  height: 55px;
-  margin-top: 20px; 
-}*/
-
-/* main box with name */
-/* for phone /ipad */
 .item1 {
   grid-column: 7/ span 12;
   grid-row: 4 / span 4;
@@ -171,23 +137,18 @@ body {
   
   margin: 0%;
   padding: 50px 20px;
-}
-/* fade in for the main container on the index page */
-.item1 {
-
 
   -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
-     -moz-animation: fadein 2s; /* Firefox < 16 */
-      -ms-animation: fadein 2s; /* Internet Explorer */
-       -o-animation: fadein 2s; /* Opera < 12.1 */
-          animation: fadein 2s;
+  -moz-animation: fadein 2s; /* Firefox < 16 */
+   -ms-animation: fadein 2s; /* Internet Explorer */
+    -o-animation: fadein 2s; /* Opera < 12.1 */
+       animation: fadein 2s;
 }
 
 .aboutLink {
   Font-Family: 'Cormorant Garamond', Serif; 
   color: #59482C; 
   background-color:  #59482c48; 
-  /* border-radius: 7px; */
   text-decoration: none;
   margin-top: 2px;
   padding: 2px 15px;
@@ -195,12 +156,9 @@ body {
   transition: color 1s, background-color 2s;
 }
 .aboutLink:hover {
-  /* background-color:  #ecdcc2a4; 
-  text-decoration: underline; */
   background-color:  #90897c9a; 
   color: #16120b; 
 }
-
 .item1 h1 {
   margin: 0%;
   padding: 7% 5%;
@@ -210,10 +168,6 @@ body {
   color: #382e1d; 
   transition: background-color 2s;
 }
-/* .item1 h1:hover {
-  background-color: #d9cdb8;
-} */
-
 .item1 p {
   margin: 0%;
   padding: 7% 5%;
@@ -228,7 +182,6 @@ body {
   .item1 {
     grid-column: 7/ span 12;
     grid-row: 6 / span 8;
-
     margin: 0%;
     padding: 50px 20px;
   }
@@ -236,11 +189,9 @@ body {
     margin: 0%;
     padding: 0px 30px 10px 30px;
     text-align: justify;
-    /* text-transform: uppercase; */
     letter-spacing: 2px;
     color: #382e1d; 
     font-size: 60px;
-
   }
   .item1 p {
     margin: 0%;
@@ -249,7 +200,6 @@ body {
     line-height: 25px;
     font-size: 15px;
   }
-
   .aboutLink {
     Font-Family: 'Cormorant Garamond', Serif;
     color: #59482C; 
@@ -274,17 +224,13 @@ body {
 .item3 {
   grid-column: 7 / span 12;
   grid-row: 9 / span 1;
-  /* background-color: #5e93acea; */
-  /* color: white; */
   color: #2f3a44;
   background-color: #728ea6de;
   line-height: 130px;
   text-transform: capitalize;
   font-size: 50px;
   text-align: center;
-  /* font-weight: 600; */
   text-decoration: none;
-  /* Font-Family: 'Fira Sans', Sans-Serif; */
   font-family: 'Cormorant Garamond', Serif;
   transition: color 1s, background-color 2s;
 }
