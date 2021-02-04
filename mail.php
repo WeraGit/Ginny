@@ -1,7 +1,7 @@
 <?php
 
-    ini_set('display_errors', 'On');
-    error_reporting(E_ALL);
+    // ini_set('display_errors', 'On');
+    // error_reporting(E_ALL);
 
 $name = "";
 $email = "";
@@ -38,9 +38,9 @@ exit();
 // }
 $content="From: $name \nEmail: $email \nMessage: $message";
 $mailheader = "From: $email";
-// $sent = mail("contact@limberger.co.uk", $subject, $content, $mailheader);
+// $sent = mail("ginnywhiting@btinternet.com", $subject, $content, $mailheader);
 
-	if( mail("contact@limberger.co.uk", $subject, $content, $mailheader) ){
+	if( mail("ginnywhiting@btinternet.com", $subject, $content, $mailheader) ){
         ?>
         <!DOCTYPE html>
         <html lang="en">
@@ -59,7 +59,7 @@ $mailheader = "From: $email";
 
             <!-- main box -->
             <div class="item1"> 
-              <h1 class="mobile">Thanks for sending the message!</h1>
+              <h1>Thanks for sending the message!</h1>
               <p id="contactTxt">
                 I'll get back to you shortly.
               </p>
@@ -111,10 +111,10 @@ $mailheader = "From: $email";
 
           <!-- main box -->
           <div class="item1"> 
-            <h1 class="mobile">Sending the message via the form failed...</h1>
+            <h1>Sending the message via the form failed...</h1>
 
-            <p id="contactTxt">
-              Could you please contact me directly?
+            <p >
+              Could you please contact me directly instead?
             </p>
 
             <div class="social">

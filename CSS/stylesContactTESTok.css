@@ -31,12 +31,10 @@ Font-Size: 15px; */
 }
 
 
-
 h1 {
   Font-Family: 'Cormorant Garamond', Serif;
   Font-Size: 55px;
 }
-
 p {
   Font-Family: 'Fira Sans', Sans-Serif;
   Font-Size: 15px; 
@@ -51,7 +49,6 @@ body {
   background-size: cover; /* Resize the background image to cover the entire container */
   height: 100vh;
 }
-
 @media (min-width: 768px)  and (orientation: landscape) {
   body {
     background-image: url(../media/7.PNG);
@@ -70,7 +67,6 @@ body {
   height: 100vh;
   width: 100%;
 }
-
 /* grid container for desktop */
 @media (min-width: 768px)  and (orientation: landscape) {
   .containerMain {
@@ -81,6 +77,8 @@ body {
     width: 100%;
   }
 }
+
+
 /* home icon */
 .home {
   grid-column: 6/ span 2;  
@@ -96,7 +94,6 @@ body {
     -o-animation: fadein 4s; /* Opera < 12.1 */
        animation: fadein 4s;
 }
-
 .homeIcon {
   margin: 0%;
   height: 30px;
@@ -104,8 +101,8 @@ body {
 }
 @media (min-width: 768px)  and (orientation: landscape) {
   .home {    
-    grid-column: 20 / span 1;  
-    grid-row: 5 / span 2;
+    grid-column: 8 / span 1;  
+    grid-row: 7 / span 2;
     text-align: center;
     padding: 10px;
     display: inline-block;
@@ -117,13 +114,11 @@ body {
   }
 }
 
-
 .socialIcon {
   height: 30px;
   padding: 2px;  
   margin-bottom: -9px;
 }
-
 .mailIcon, .phoneIcon {
   height: 20px;
   padding: 2px;  
@@ -159,7 +154,6 @@ body {
     -o-animation: fadein 2s; /* Opera < 12.1 */
        animation: fadein 2s;
 }
-
 .item1 h1 {
   margin: 90px 0% 20px 0%;
   padding: 23px 15px 15px 15px;
@@ -169,7 +163,6 @@ body {
   color: #382e1d; 
   transition: background-color 2s;
 }
-
 .item1 p {
   margin: 0%;
   padding: 13px 15px 13px 15px;
@@ -181,14 +174,14 @@ body {
 /* for desktop */
 @media (min-width: 768px) and (orientation: landscape) {
   .item1 {
-    grid-column: 12/ span 9;
-    grid-row: 5 / span 9;
+    grid-column: 8/ span 10;
+    grid-row: 7 / span 6;
     margin: 0%;
-    padding: 30px 20px 30px 30px;
+    padding: 30px;
   }
   .item1 h1 {
-    margin: 0%;
-    padding: 0px 30px 0px 40px;
+    margin: 30px 0% 20px 0%;
+    padding: 0px;
     text-align: center;
     letter-spacing: 2px;
     color: #382e1d; 
@@ -196,77 +189,14 @@ body {
   }
   .item1 p {
     margin: 0%;
-    padding: 4px 30px 0px 40px;
-    text-align: justify;
-    line-height: 30px;
-    font-size: 16px;
-  }
-  #contactTxt {
-    margin-top: 20px;
-    margin-bottom: 10px;
-  }
-  .mobile {
-    display: none;
-  }
-}
-
-
-/* for phone /ipad */
-.item2 {
-  grid-column: 6/ span 14;
-  grid-row: 8 / span 5;
-  background-color: #D9D2B0df;
-  color: #59482C;   
-  margin: 0%;
-  padding: 50px 30px;
-
-  -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
-  -moz-animation: fadein 2s; /* Firefox < 16 */
-   -ms-animation: fadein 2s; /* Internet Explorer */
-    -o-animation: fadein 2s; /* Opera < 12.1 */
-       animation: fadein 2s;
-}
-
-.item2 p {
-  margin: 30px 0% -20px 0%;
-  padding: 23px 15px 13px 15px;
-  text-align: justify;
-  font-size: 25px;
-  line-height: 35px;
-}
-
-
-/* for desktop */
-@media (min-width: 768px) and (orientation: landscape) {
-  .item2 {
-    grid-column: 12/ span 9;
-    grid-row: 5 / span 9;
-    margin: 0%;
-    padding: 30px 20px 30px 30px;
-  }
-  .item2 h1 {
-    margin: 0%;
-    padding: 0px 30px 0px 40px;
+    padding: 4px 30px 0px 0px;
     text-align: center;
-    letter-spacing: 2px;
-    color: #382e1d; 
-    font-size: 35px;
-  }
-  .item2 p {
-    margin: 0%;
-    padding: 4px 30px 0px 40px;
-    text-align: justify;
     line-height: 30px;
     font-size: 16px;
   }
-  #contactTxt {
-    margin-top: 20px;
-    margin-bottom: 10px;
-  }
-  .mobile {
-    display: none;
-  }
 }
+
+
 
 
 .foot {
@@ -285,11 +215,7 @@ body {
   display: inline-block;
   margin-bottom: -1%;
 }
-/* @media (min-width: 768px)  and (orientation: landscape) {
-  .foot {
-    display: none;
-  }
-} */
+
 
 
 
