@@ -45,51 +45,48 @@ $mailheader = "From: $email";
         <!DOCTYPE html>
         <html lang="en">
         <head>
-        <title> Weronika - Contact</title>
-        <meta charset="utf-8">
-        <link rel="stylesheet" type="text/css" href="./CSS/normalize.css">
-        <link rel="stylesheet" type="text/css" href="./CSS/myStyle5.css">
-        
-
+          <title> Contact </title>
+          <meta charset="utf-8">
+          <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond:700i|Fira+Sans" rel="stylesheet">
+          <link rel="stylesheet" type="text/css" href="./CSS/normalize.css">
+          <link rel="stylesheet" type="text/css" href="./CSS/stylesContactTESTok.css">
+          <meta name="description" content="Virginia Whiting - contemporary artist"/>
+            
         </head>
-        <body id="bodyContact">
-            <header>
-                <nav>
-                    <ul>
-                    <li><a class="navList" href="./index.html" >HOME</a></li>
-                    <li><a class="navList" href="./portfolio/work.html" >PORTFOLIO</a></li>
-                    <li><a class="navList" href="./about.html" >ABOUT</a></li>
-                    <li><a class="navList" href="./contact.html" >CONTACT</a></li>
-                    </ul>
-                </nav>
-            </header>
-            <section id="contactBox3">
-                <div id="contactDiv3">
-                    <h1 class="workTxtHead"><?=$name?>, thanks for your message.</h1>
-                    <p class="TxtPwork">I will reply as soon as I read it!</p>
-                </div>
-            </section>
+        <body>
+          <!-- container for the grid -->
+          <div class="containerMain">
 
+            <!-- main box -->
+            <div class="item1"> 
+              <h1 class="mobile">Thanks for sending the message!</h1>
+              <p id="contactTxt">
+                I'll get back to you shortly.
+              </p>
+              <br>
+            </div>
 
-        <footer>
+            <!--   home icon LEFT up -->
+            <div class="home">
+              <a href="index.html"><img class="homeIcon" src="./media/home.png" ></a>
+            </div>
 
-        <img id="sigFoo" src="./Images/Signature Black.png" />     
-        <br />
-        All rights reserved. 
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
-        2020 
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
-        <a href="mailto:contact@limberger.co.uk">contact@limberger.co.uk </a>
-        <br><br>
-        Special thanks for graphic & video work to FastTalkMedia.
-        <br><br>
+            <!-- footer -->
+            <footer class="foot">
+              <p class="footerTxt">            
+                2021 &nbsp; Virginia Whiting &nbsp; &#169  
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <!-- <br> -->
+                + &nbsp;website made by 
+                &nbsp;&nbsp;
+                <a href="https://limberger.co.uk/">
+                  <img id="sigImage" src="./media/Signature Black.png"></a>
+                &nbsp; &#169 
+              </p>
+            </footer>
 
-        </footer>
-        <div id=”preloader”></div>
-
-        <script type="text/javascript" src='./vendor/jquery/jquery-3.2.1.min.js' ></script> 
-        <script type="text/javascript" src='./JavaScript/javas.js'></script> 
-
+          </div>
         </body>
         </html>
         <?php
@@ -98,54 +95,64 @@ $mailheader = "From: $email";
         <!DOCTYPE html>
         <html lang="en">
         <head>
-        <title> Weronika - Contact</title>
-        <meta charset="utf-8">
-        <link rel="stylesheet" type="text/css" href="./CSS/normalize.css">
-        <link rel="stylesheet" type="text/css" href="./CSS/myStyle5.css">
-        
+          <title> Contact </title>
+          <meta charset="utf-8">
+          <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond:700i|Fira+Sans" rel="stylesheet">
+
+          <link rel="stylesheet" type="text/css" href="./CSS/normalize.css">
+          <link rel="stylesheet" type="text/css" href="./CSS/stylesContactTESTno.css">
+          <meta name="description" content="Virginia Whiting - contemporary artist"/>
+            
 
         </head>
-        <body id="bodyContact">
-            <header>
-                <nav>
-                    <ul>
-                    <li><a class="navList" href="./index.html" >HOME</a></li>
-                    <li><a class="navList" href="./portfolio/work.html" >PORTFOLIO</a></li>
-                    <li><a class="navList" href="./about.html" >ABOUT</a></li>
-                    <li><a class="navList" href="./contact.html" >CONTACT</a></li>
-                    </ul>
-                </nav>
-            </header>
+        <body>
+        <!-- container for the grid -->
+        <div class="containerMain">
 
-            <section id="contactBox3">
-            <div id="contactDiv3">
+          <!-- main box -->
+          <div class="item1"> 
+            <h1 class="mobile">Sending the message via the form failed...</h1>
 
-                <h1 class="workTxtHead"><?=$name?>,<br>something went wrong.</h1>
-                <p class="workTxtP">Try again later or email me directly on 
-                    <a href="mailto:contact@limberger.co.uk">contact@limberger.co.uk </a>.
-                </p>
+            <p id="contactTxt">
+              Could you please contact me directly?
+            </p>
 
+            <div class="social">
+              <a href="https://www.facebook.com/virginia.whiting.1"><img class="socialIcon" src="media/face.webp"></a>
+              &nbsp;facebook account
+              <br>
+              <a href="https://z-p42.www.instagram.com/virginiawhiting/"><img class="socialIcon" src="media/insta.webp"></a>
+              &nbsp;instagram account
+              <br>
+              <a href="mailto:ginnywhiting@btinternet.com"><img class="mailIcon" src="media/mail.png"></a>
+              &nbsp;ginnywhiting@btinternet.com
+              <br>
+              &nbsp;<img class="phoneIcon" src="media/phone.png"> 
+              &nbsp;07799 528 148
             </div>
-            </section>
+          </div>
 
-        <footer>
+          <!--   home icon LEFT up -->
+          <div class="home">
+            <a href="index.html"><img class="homeIcon" src="./media/home.png" ></a>
+          </div>
 
-        <img id="sigFoo" src="./Images/Signature Black.png" />     
-        <br />
-        All rights reserved. 
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
-        2020 
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
-        <a href="mailto:contact@limberger.co.uk">contact@limberger.co.uk </a>
-        <br><br>
-        Special thanks for graphic & video work to FastTalkMedia.
-        <br><br>
-
-        </footer>
-        <div id=”preloader”></div>
-
-        <script type="text/javascript" src='./vendor/jquery/jquery-3.2.1.min.js' ></script> 
-        <script type="text/javascript" src='./JavaScript/javas.js'></script> 
+          <!-- footer -->
+          <footer class="foot">
+            <p class="footerTxt">      
+              
+              2021 &nbsp; Virginia Whiting &nbsp; &#169  
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <!-- <br> -->
+              + &nbsp;website made by 
+              &nbsp;&nbsp;
+              <a href="https://limberger.co.uk/">
+                <img id="sigImage" src="./media/Signature Black.png"></a>
+              &nbsp; &#169 
+            </p>
+          </footer>
+        </div>
 
         </body>
         </html>

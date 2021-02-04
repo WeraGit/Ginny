@@ -117,6 +117,17 @@ body {
   }
 }
 
+.social {
+  margin: 0%;
+  /* padding: 10px 5px 40px 5px; */
+  Font-Family: 'Fira Sans', Sans-Serif;
+  /* font-size: 20px; */
+  margin-left: 75px;
+  /* margin: 0%; */
+  padding: 23px 15px 23px 15px;
+  font-size: 25px;
+  line-height: 35px;
+}
 
 .socialIcon {
   height: 30px;
@@ -147,7 +158,7 @@ body {
 /* for phone /ipad */
 .item1 {
   grid-column: 6/ span 14;
-  grid-row: 4 / span 4;
+  grid-row: 4 / span 6;
   background-color: #D9D2B0df;
   color: #59482C;   
   margin: 0%;
@@ -172,7 +183,7 @@ body {
 
 .item1 p {
   margin: 0%;
-  padding: 13px 15px 13px 15px;
+  padding: 23px 15px 23px 15px;
   text-align: center;
   font-size: 25px;
   line-height: 35px;
