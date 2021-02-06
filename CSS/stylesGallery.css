@@ -268,11 +268,11 @@ img.darkableImage
   transform: translate(-50%, -50%);
 }
 .typeBanner h1 {
-  /* margin: 150px 110px;
+  margin: 150px 110px;
   padding: 20px;
   background-color: rgba(245, 222, 179, 0.418);
   font-size: 45px;
-  letter-spacing: 2px; */
+  letter-spacing: 2px;
   /* z-index: 20; */
 }
 
