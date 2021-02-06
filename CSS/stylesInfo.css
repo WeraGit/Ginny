@@ -40,7 +40,7 @@ body {
   background-position: center;
   background-repeat: no-repeat; /* Do not repeat the image */
   background-size: cover; /* Resize the background image to cover the entire container */
-  height: 3500px;
+  height: 3000px;
 }
 
 @media (min-width: 768px) and (orientation: landscape) {
@@ -56,7 +56,7 @@ body {
   display: grid;
   grid-template-columns: repeat(24, 1fr) ;
   grid-template-rows: repeat(2, 1fr) repeat(50, 50px) repeat(2, 1fr);
-  height: 3500px;
+  height: 3000px;
   width: 100%;
 }
 
@@ -144,7 +144,7 @@ body {
 /* for phone /ipad */
 .item1 {
   grid-column: 6/ span 14;
-  grid-row: 2 / span 13;
+  grid-row: 2 / span 40;
   background-color: #c9d2d3a6;
   margin: 0%;
   padding: 50px 20px;
@@ -251,11 +251,12 @@ body {
 
 .item3 {
   grid-column: 6 / span 14;
-  grid-row: 16 / span 1;
+  grid-row: 44 / span 2;
   color: #2f3a44;
   /* background-color: #728ea6de; */
-  background-color: #A3B19Fde;
-  line-height: 130px;
+  /* background-color: #A3B19Fde; */
+  background-color: #6D9CB9de;
+  line-height: 100px;
   text-transform: capitalize;
   font-size: 50px;
   text-align: center;
@@ -314,7 +315,7 @@ body {
 /* the yellow gallery box on the bottom */
 .item4 {
   grid-column: 6 / span 14;
-  grid-row: 15 / span 1;
+  grid-row: 42 / span 2;
   /* background-color: rgba(231, 196, 107, 0.829); */
   background-color: #b3a169ea;
   color:  rgb(73, 62, 34);
@@ -322,7 +323,7 @@ body {
   text-decoration: none;
   text-align: center;
   font-family: 'Cormorant Garamond', Serif;
-  line-height: 130px;
+  line-height: 100px;
   letter-spacing: 5px;
 
   -webkit-animation: fadein 3s; /* Safari, Chrome and Opera > 12.1 */
@@ -365,14 +366,13 @@ body {
 
 .foot {
   grid-column: 1 / span 24;
-  grid-row: 18 / span 1;
+  grid-row: 55 / span 2;
   background-image: linear-gradient(to bottom, #c9d2d300, #dce3e4);
   color: black;
   text-align: center;
 }
 .footerTxt {
   padding: 6% 0% 0% 0%;
-  /* font-weight: bold; */
   font-size: 20px;
 }
 #sigImage {
@@ -387,7 +387,6 @@ body {
   }
   .footerTxt {
     padding: 3% 0% 0% 0%;
-    /* font-weight: bold; */
     font-size: 16px;
   }
 }
