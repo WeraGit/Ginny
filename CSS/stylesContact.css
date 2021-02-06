@@ -148,7 +148,7 @@ body {
 /* for phone /ipad */
 .item1 {
   grid-column: 6/ span 14;
-  grid-row: 3 / span 5;
+  grid-row: 3 / span 7;
   /* background-color: #D9D2B0df; */
   /* background-color: #D9D9D9df; */
   background-color: #9FBFBCd7;
@@ -222,7 +222,7 @@ body {
 /* contact box on the right or bottom in mobile version */
 .item3 {
   grid-column: 6 / span 14;
-  grid-row: 10 / span 6;
+  grid-row: 10 / span 8;
   color: black;
   /* background-color: #778c92e0; */
   background-color: #a3a2a2cc  ;
