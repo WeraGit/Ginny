@@ -52,7 +52,7 @@ p {
 }
 
 body {
-  background-image: url(../media/6.PNG);
+  background-image: url(../media/13.PNG);
   background-position: center;
   background-repeat: no-repeat; /* Do not repeat the image */
   background-size: cover; /* Resize the background image to cover the entire container */
@@ -61,10 +61,6 @@ body {
 
 @media (min-width: 768px) and (orientation: landscape) {
   body {
-    background-image: url(../media/6.PNG);
-    background-position: center;
-    background-repeat: no-repeat; /* Do not repeat the image */
-    background-size: cover; /* Resize the background image to cover the entire container */
     height: 1500px;
   }
 }
