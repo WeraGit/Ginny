@@ -5,36 +5,22 @@ Font-Family: 'Fira Sans', Sans-Serif;
 Font-Size: 15px; */
 
 /* @media (min-width: 768px)  and (orientation: landscape) */
-.blue {
-  background-color: #5e93acab;
-}
-.yellow {
-  background-color: rgba(231, 196, 107, 0.829);
-}
-.grey {
-  background-color: #728ea6e3;
-}
-.brown {
-  background-color: #59482C;
-}
+
 
 @keyframes fadein {
   from { opacity: 0; }
   to   { opacity: 1; }
 }
-
 /* Firefox < 16 */
 @-moz-keyframes fadein {
   from { opacity: 0; }
   to   { opacity: 1; }
 }
-
 /* Safari, Chrome and Opera > 12.1 */
 @-webkit-keyframes fadein {
   from { opacity: 0; }
   to   { opacity: 1; }
 }
-
 /* Internet Explorer */
 @-ms-keyframes fadein {
   from { opacity: 0; }
@@ -42,11 +28,9 @@ Font-Size: 15px; */
 }
 
 
-
 h1 {
   Font-Family: 'Cormorant Garamond', Serif;
 }
-
 p {
   Font-Family: 'Fira Sans', Sans-Serif;
 }
@@ -56,12 +40,12 @@ body {
   background-position: center;
   background-repeat: no-repeat; /* Do not repeat the image */
   background-size: cover; /* Resize the background image to cover the entire container */
-  height: 2500px;
+  height: 3500px;
 }
 
 @media (min-width: 768px) and (orientation: landscape) {
   body {
-    height: 1500px;
+    height: 2500px;
   }
 }
 
@@ -71,8 +55,8 @@ body {
 .containerMain {
   display: grid;
   grid-template-columns: repeat(24, 1fr) ;
-  grid-template-rows: repeat(2, 1fr) repeat(14, 130px) repeat(2, 1fr);
-  height: 2500px;
+  grid-template-rows: repeat(2, 1fr) repeat(50, 50px) repeat(2, 1fr);
+  height: 3500px;
   width: 100%;
 }
 
@@ -82,7 +66,7 @@ body {
     display: grid;
     grid-template-columns: repeat(5, 1fr) repeat(14, 55px) repeat(5, 1fr) ;
     grid-template-rows: repeat(4, 1fr) repeat(25, 40px) repeat(4, 1fr);
-    height: 1500px;
+    height: 2500px;
     width: 100%;
   }
 }
@@ -269,7 +253,8 @@ body {
   grid-column: 6 / span 14;
   grid-row: 16 / span 1;
   color: #2f3a44;
-  background-color: #728ea6de;
+  /* background-color: #728ea6de; */
+  background-color: #A3B19Fde;
   line-height: 130px;
   text-transform: capitalize;
   font-size: 50px;
@@ -311,7 +296,7 @@ body {
     grid-column: 19/ span 1;
     grid-row: 18 / span 5;
     color: #2f3a44;
-    background-color: #728ea6de;
+    /* background-color: #728ea6de; */
     margin: 0%;
     padding-top: 32px;
     line-height: 20px;
@@ -330,7 +315,8 @@ body {
 .item4 {
   grid-column: 6 / span 14;
   grid-row: 15 / span 1;
-  background-color: rgba(231, 196, 107, 0.829);
+  /* background-color: rgba(231, 196, 107, 0.829); */
+  background-color: #b3a169ea;
   color:  rgb(73, 62, 34);
   font-size: 53px;
   text-decoration: none;
@@ -370,7 +356,7 @@ body {
     line-height: 80px;
     letter-spacing: 5px;
 
-    background-color: rgb(231, 196, 107);
+    /* background-color: rgb(231, 196, 107); */
   }
 }
 
