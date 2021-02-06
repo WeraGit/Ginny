@@ -245,6 +245,8 @@ body {
   opacity:1;
   filter:alpha(opacity=100);
 
+  position: relative;
+
   -webkit-animation: fadein 4s; /* Safari, Chrome and Opera > 12.1 */
   -moz-animation: fadein 4s; /* Firefox < 16 */
    -ms-animation: fadein 4s; /* Internet Explorer */
@@ -258,77 +260,57 @@ img.darkableImage
   height: 100%;
   opacity:1;
   filter:alpha(opacity=100);
-
-  
 }
 .centerTxt {
-  /* position: absolute; */
+  position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-}
-.typeBanner h1 {
-  margin: 150px 110px;
-  padding: 20px;
+  margin: 0%;
+  padding: 15px;
+  width: 300px;
   background-color: rgba(245, 222, 179, 0.418);
   font-size: 45px;
   letter-spacing: 2px;
-  /* z-index: 20; */
 }
+
 
 @media (min-width: 768px)  and (orientation: landscape) {
   .typeBanner {
     grid-column: 4/ span 18;
   }
-  .typeBanner h1 {
-    margin: 50px 200px;
+  .centerTxt {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0%;
     padding: 20px;
-    background-color: rgba(245, 222, 179, 0.418);
-    font-size: 45px;
-    letter-spacing: 2px;
+    width: 500px;
   }
 }
 
 
 .landscapes {
   grid-row: 13 / span 8;
-  /* background-image: url(../media/8.PNG); */
-  /* background-color: black; */
 }
-/* .landscapeFilm {
-  grid-row: 13 / span 8;
-z-index: 0;
-  background-color:black; 
-  display:block; 
-  opacity:1;
-  filter:alpha(opacity=100);
-} */
-
 @media (min-width: 768px)  and (orientation: landscape) {
   .landscapes {
     grid-row: 12 / span 6;
-  }
-  .landscapeFilm {
-    grid-row: 12 / span 6;
-    z-index: 4;
-    background-color: rgba(0, 0, 0, 0.137);    
   }
 }
 
 .seascapes {
   grid-row: 23 / span 8;
-  background-image: url(../media/9.PNG);
 }
 @media (min-width: 768px)  and (orientation: landscape) {
   .seascapes {
     grid-row: 19 / span 6;
-
   }
 }
 
 .abstract {
   grid-row: 33 / span 8;
-  background-image: url(../media/4.jpeg);
 }
 @media (min-width: 768px)  and (orientation: landscape) {
   .abstract {
@@ -338,7 +320,6 @@ z-index: 0;
 
 .still {
   grid-row: 43 / span 8;
-  background-image: url(../media/11.PNG);
 }
 @media (min-width: 768px)  and (orientation: landscape) {
   .still {
