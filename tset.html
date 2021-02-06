@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <style type="text/css">
+
+        .outerLink 
+        {
+            background-color:black; 
+            display:block; 
+            opacity:1;
+            filter:alpha(opacity=100);
+            width:200px;
+        }
+
+        img.darkableImage 
+        {
+            opacity:1;
+            filter:alpha(opacity=100);
+        }
+</style>
+    </head>
+
+    <body>
+        <a href="http://www.google.com" class="outerLink">
+            <img src="http://www.google.co.uk/intl/en_uk/images/logo.gif" width="200" 
+            class="darkableImage" onmouseout="this.style.opacity=1;this.filters.alpha.opacity=100" 
+            onmouseover="this.style.opacity=0.6;this.filters.alpha.opacity=60" />
+        </a>
+    </body>
+</html>

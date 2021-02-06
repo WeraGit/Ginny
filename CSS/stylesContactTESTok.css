@@ -43,7 +43,7 @@ p {
 
 
 body {
-  background-image: url(../media/7.PNG);
+  background-image: url(../media/7.JPG);
   background-position: center;
   background-repeat: no-repeat; /* Do not repeat the image */
   background-size: cover; /* Resize the background image to cover the entire container */
@@ -51,10 +51,6 @@ body {
 }
 @media (min-width: 768px)  and (orientation: landscape) {
   body {
-    background-image: url(../media/7.PNG);
-    background-position: center;
-    background-repeat: no-repeat; /* Do not repeat the image */
-    background-size: cover; /* Resize the background image to cover the entire container */
     height: 100vh;
   }
 }
@@ -143,7 +139,8 @@ body {
 .item1 {
   grid-column: 6/ span 14;
   grid-row: 4 / span 4;
-  background-color: #D9D2B0df;
+  /* background-color: #D9D2B0df; */
+  background-color: #B8D5D9df;
   color: #59482C;   
   margin: 0%;
   padding: 0px 30px;
