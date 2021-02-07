@@ -35,6 +35,10 @@ p {
   Font-Family: 'Fira Sans', Sans-Serif;
 }
 
+.italic {
+  font-style: italic;
+}
+
 body {
   background-image: url(../media/13.PNG);
   background-position: center;
@@ -359,5 +363,10 @@ body {
   .footerTxt {
     padding: 3% 0% 0% 0%;
     font-size: 16px;
+  }
+  #sigImage {
+    height: 50px;
+    display: inline-block;
+    margin-bottom: -0.5%;
   }
 }
