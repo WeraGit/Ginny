@@ -6,24 +6,20 @@ Font-Size: 15px; */
 
 /* @media (min-width: 768px)  and (orientation: landscape) */
 
-
 @keyframes fadein {
   from { opacity: 0; }
   to   { opacity: 1; }
 }
-
 /* Firefox < 16 */
 @-moz-keyframes fadein {
   from { opacity: 0; }
   to   { opacity: 1; }
 }
-
 /* Safari, Chrome and Opera > 12.1 */
 @-webkit-keyframes fadein {
   from { opacity: 0; }
   to   { opacity: 1; }
 }
-
 /* Internet Explorer */
 @-ms-keyframes fadein {
   from { opacity: 0; }
@@ -41,7 +37,6 @@ p {
 }
 
 body {
-  overflow: hidden;
   background-image: url(../media/1.jpeg);
   background-position: center;
   background-repeat: no-repeat; /* Do not repeat the image */
@@ -51,7 +46,6 @@ body {
 
 /* grid container */
 .containerMain {
-  /* opacity: 0; */
   display: grid;
   grid-template-columns: repeat(24, 1fr) ;
   grid-template-rows: repeat(2, 1fr) repeat(8, 130px) repeat(2, 1fr);
@@ -70,30 +64,7 @@ body {
   }
 }
 
-/* temporary borders */
-.border {
-  border: 3px solid rgb(43, 43, 100);
-}
 
-.blue {
-  background-color: #5e93acab;
-}
-
-.yellow {
-  background-color: rgba(231, 196, 107, 0.829);
-}
-
-.beige {
-  background-color: #d9cdb8df;
-}
-
-.grey {
-  background-color: #728ea6e3;
-}
-
-.brown {
-  background-color: #59482C;
-}
 
 /* social icons on the top right  */
 .social {
@@ -121,17 +92,14 @@ body {
     grid-column: 16/ span 3;  
     grid-row: 6 / span 1;
     text-align: right;
-    background-color: transparent;
-    z-index: 5;
-    padding: 10px;
+    background-color: transparent;    
+    padding: 15px;
   }
 }
 
 .item1 {
   grid-column: 7/ span 12;
-  grid-row: 4 / span 4;
-  /* background-color: #6b3f40d8;
-  color: rgb(245, 242, 229); */
+  grid-row: 4 / span 5;
   background-color: #d9cdb8df;
   color: #59482C; 
   
@@ -170,10 +138,10 @@ body {
 }
 .item1 p {
   margin: 0%;
-  padding: 7% 5%;
+  padding: 2% 6%;
   text-align: justify;
   font-size: 25px;
-  line-height: 35px;
+  line-height: 43px;
 }
 
 
@@ -183,7 +151,7 @@ body {
     grid-column: 7/ span 12;
     grid-row: 6 / span 8;
     margin: 0%;
-    padding: 50px 20px;
+    padding: 35px 20px;
   }
   .item1 h1 {
     margin: 0%;
@@ -195,17 +163,12 @@ body {
   }
   .item1 p {
     margin: 0%;
-    padding: 10px 30px 5px 30px;
+    padding: 10px 30px 0px 30px;
     text-align: justify;
-    line-height: 25px;
+    line-height: 27px;
     font-size: 15px;
   }
   .aboutLink {
-    Font-Family: 'Cormorant Garamond', Serif;
-    color: #59482C; 
-    background-color:  #59482c32; 
-    /* border-radius: 7px; */
-    text-decoration: none;
     margin-top: 1px;
     padding: 3px 15px;
     font-size: 20px;
@@ -223,7 +186,7 @@ body {
 
 .item3 {
   grid-column: 7 / span 12;
-  grid-row: 9 / span 1;
+  grid-row: 10 / span 1;
   color: #2f3a44;
   background-color: #728ea6de;
   line-height: 130px;
@@ -262,12 +225,9 @@ body {
    display: inline-block; 
   }
   .item3 {
-  
     grid-column: 19/ span 1;
     grid-row: 7 / span 5;
     color: #2f3a44;
-    /* color: white; */
-    /* background-color: #a1c1ddde; */
     background-color: #728ea6de;
     margin: 0%;
     padding-top: 35px;
@@ -278,22 +238,19 @@ body {
     text-decoration: none;
     text-align: center;
     Font-Family: 'Fira Sans', Sans-Serif;
-    /* font-family: 'Cormorant Garamond', Serif; */
   }  
 }
 
 /* the yellow gallery box on the bottom */
 .item4 {
   grid-column: 7 / span 12;
-  grid-row: 8 / span 1;
-  /* background-color: #5e93acea; */
+  grid-row: 9 / span 1;
   background-color: rgba(231, 196, 107, 0.829);
   color:  rgb(73, 62, 34);
   text-transform: capitalize;
   font-size: 53px;
   text-decoration: none;
   text-align: center;
-  /* Font-Family: 'Fira Sans', Sans-Serif; */
   font-family: 'Cormorant Garamond', Serif;
   line-height: 130px;
   letter-spacing: 5px;
@@ -325,14 +282,11 @@ body {
     font-size: 30px;
     text-decoration: none;
     text-align: center;
-    /* Font-Family: 'Fira Sans', Sans-Serif; */
     font-family: 'Cormorant Garamond', Serif;
     line-height: 70px;
     letter-spacing: 5px;
   }
 }
-
-
 
 
 
@@ -357,7 +311,6 @@ body {
   .foot {
     display: none;
   }
-
 }
 
 

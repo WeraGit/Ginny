@@ -40,7 +40,7 @@ body {
   background-position: center;
   background-repeat: no-repeat; /* Do not repeat the image */
   background-size: cover; /* Resize the background image to cover the entire container */
-  height: 3000px;
+  height: 3500px;
 }
 
 @media (min-width: 768px) and (orientation: landscape) {
@@ -49,14 +49,12 @@ body {
   }
 }
 
-
-
 /* grid container */
 .containerMain {
   display: grid;
   grid-template-columns: repeat(24, 1fr) ;
-  grid-template-rows: repeat(2, 1fr) repeat(50, 50px) repeat(2, 1fr);
-  height: 3000px;
+  grid-template-rows: repeat(2, 1fr) repeat(60, 50px) repeat(2, 1fr);
+  height: 3500px;
   width: 100%;
 }
 
@@ -74,7 +72,7 @@ body {
 /* home icon */
 .home {
   grid-column: 6/ span 2;  
-  grid-row: 2 / span 1;
+  grid-row: 4 / span 1;
   z-index: 5;
   margin: 0%;
   padding: 15px 20px;
@@ -111,7 +109,7 @@ body {
 /* social icons on the top right of the main box  */
 .social {
   grid-column: 16/ span 4;  
-  grid-row: 2 / span 1;
+  grid-row: 4 / span 1;
   text-align: right;
   background-color: transparent;
   z-index: 5;
@@ -144,8 +142,9 @@ body {
 /* for phone /ipad */
 .item1 {
   grid-column: 6/ span 14;
-  grid-row: 2 / span 40;
-  background-color: #c9d2d3a6;
+  grid-row: 4 / span 49;
+  background-color: #c9d2d3a6;  
+  color: #162024;
   margin: 0%;
   padding: 50px 20px;
   text-align: center;
@@ -163,23 +162,18 @@ body {
   text-align: center;
   font-size: 55px;
   letter-spacing: 2px;
-  /* color: #382e1d;  */
-  color: #162024;
 }
-
 .item1 p {
   margin: 0%;
   padding: 30px 15px;
   text-align: justify;
   font-size: 25px;
   line-height: 40px;
-  color: #162024;
 }
 
 .bike {
   margin: 0% auto;
   width: 500px;
-  /* margin: auto; */
   padding: 10px 5px;
 }
 
@@ -195,7 +189,7 @@ body {
   .item1 {
     grid-column: 7/ span 12;
     grid-row: 3 / span 23;
-
+    text-align: center;
     margin: 0%;
     padding: 50px 20px;
   }
@@ -209,7 +203,6 @@ body {
     
     font-size: 60px;
   }
-
   .item1 p {
     margin: 0%;
     padding: 10px 30px 5px 30px;
@@ -217,27 +210,17 @@ body {
     line-height: 30px;
     font-size: 15px;
   }
-
-  .item1 {
-    text-align: center;
-  }
   .bike {
     width: 555px;
     margin: auto;
     padding: 20px 0px;
   }
-  /* .name {
-    grid-column: 7/ span 12;
-    grid-row: 4 / span 1;
-    z-index: 5;
-  } */
   #bikeMobile {
     display: none;
   }
   #bikeDesk {
     display: inline;
   }
-
 }
 
 
@@ -251,35 +234,27 @@ body {
 
 .item3 {
   grid-column: 6 / span 14;
-  grid-row: 44 / span 2;
+  grid-row: 55 / span 2;
   color: #2f3a44;
-  /* background-color: #728ea6de; */
-  /* background-color: #A3B19Fde; */
   background-color: #6D9CB9de;
   line-height: 100px;
   text-transform: capitalize;
   font-size: 50px;
   text-align: center;
-  /* font-weight: 600; */
   text-decoration: none;
-  /* Font-Family: 'Fira Sans', Sans-Serif; */
   font-family: 'Cormorant Garamond', Serif;
   transition: color 1s, background-color 2s;
+  -webkit-animation: fadein 4s; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadein 4s; /* Firefox < 16 */
+   -ms-animation: fadein 4s; /* Internet Explorer */
+    -o-animation: fadein 4s; /* Opera < 12.1 */
+       animation: fadein 4s;
 }
-
 .item3:hover {
   color: #0b0d0f;
   background-color: #637a8f;
 }
 
-/* fade in for the main container on the index page */
-.item3 {
-  -webkit-animation: fadein 4s; /* Safari, Chrome and Opera > 12.1 */
-     -moz-animation: fadein 4s; /* Firefox < 16 */
-      -ms-animation: fadein 4s; /* Internet Explorer */
-       -o-animation: fadein 4s; /* Opera < 12.1 */
-          animation: fadein 4s;
-}
 
 
 
@@ -315,8 +290,7 @@ body {
 /* the yellow gallery box on the bottom */
 .item4 {
   grid-column: 6 / span 14;
-  grid-row: 42 / span 2;
-  /* background-color: rgba(231, 196, 107, 0.829); */
+  grid-row: 53 / span 2;
   background-color: #b3a169ea;
   color:  rgb(73, 62, 34);
   font-size: 53px;
@@ -366,7 +340,7 @@ body {
 
 .foot {
   grid-column: 1 / span 24;
-  grid-row: 55 / span 2;
+  grid-row: 65 / span 2;
   background-image: linear-gradient(to bottom, #c9d2d300, #dce3e4);
   color: black;
   text-align: center;

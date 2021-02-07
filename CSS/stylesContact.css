@@ -77,6 +77,8 @@ body {
     width: 100%;
   }
 }
+
+
 /* home icon */
 .home {
   grid-column: 6/ span 2;  
@@ -101,19 +103,18 @@ body {
 
 @media (min-width: 768px)  and (orientation: landscape) {
   .home {    
-    grid-column: 20 / span 1;  
+    grid-column: 19 / span 2;  
     grid-row: 5 / span 2;
-    text-align: center;
-    padding: 10px;
+    text-align: right;
+    padding: 17px;
     display: inline-block;
   }
   .homeIcon {
     margin: 0%;
     height: 25px;
-    padding: 4px 2px 4px 2px;
+    padding: 0px;
   }
 }
-
 
 
 .socialIcon {
@@ -128,13 +129,10 @@ body {
   margin-bottom: -4px;
 }
 
-
-
 /* social icons on the top right of the main box  */
 @media (min-width: 768px) and (orientation: landscape) {
   .socialIcon {
     height: 25px;
-    /* background-color: #a6bbced2; */
     padding: 2px;
     margin-bottom: -10px;
   }
