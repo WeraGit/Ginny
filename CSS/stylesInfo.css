@@ -45,7 +45,7 @@ body {
 
 @media (min-width: 768px) and (orientation: landscape) {
   body {
-    height: 2500px;
+    height: 2000px;
   }
 }
 
@@ -63,8 +63,8 @@ body {
   .containerMain {
     display: grid;
     grid-template-columns: repeat(5, 1fr) repeat(14, 55px) repeat(5, 1fr) ;
-    grid-template-rows: repeat(4, 1fr) repeat(25, 40px) repeat(4, 1fr);
-    height: 2500px;
+    grid-template-rows: repeat(4, 1fr) repeat(30, 50px) repeat(4, 1fr);
+    height: 2000px;
     width: 100%;
   }
 }
@@ -72,10 +72,10 @@ body {
 /* home icon */
 .home {
   grid-column: 6/ span 2;  
-  grid-row: 4 / span 1;
+  grid-row: 4 / span 2;
   z-index: 5;
   margin: 0%;
-  padding: 15px 20px;
+  padding: 20px;
   text-align: left;
 
   -webkit-animation: fadein 4s; /* Safari, Chrome and Opera > 12.1 */
@@ -93,15 +93,15 @@ body {
 @media (min-width: 768px)  and (orientation: landscape) {
   .home {
     grid-column: 7/ span 2;  
-    grid-row: 3 / span 1;
+    grid-row: 4 / span 2;
     z-index: 5;
-    padding: 12px 15px;
+    padding: 15px;
     text-align: left;
   }
   .homeIcon {
     margin: 0%;
     height: 28px;
-    padding: 4px 2px 4px 2px;
+    padding: 4px;
   }
 }
 
@@ -109,11 +109,11 @@ body {
 /* social icons on the top right of the main box  */
 .social {
   grid-column: 16/ span 4;  
-  grid-row: 4 / span 1;
+  grid-row: 4 / span 2;
   text-align: right;
   background-color: transparent;
   z-index: 5;
-  padding: 10px 15px 0px 10px;
+  padding: 15px;
 
   -webkit-animation: fadein 4s; /* Safari, Chrome and Opera > 12.1 */
   -moz-animation: fadein 4s; /* Firefox < 16 */
@@ -123,7 +123,7 @@ body {
 }
 .socialIcon {
   margin: 0%;
-  height: 30px;
+  height: 35px;
   padding: 4px 2px 4px 2px;
 }
 
@@ -131,10 +131,11 @@ body {
 @media (min-width: 768px) and (orientation: landscape) {
   .social {
     grid-column: 16/ span 3;  
-    grid-row: 3 / span 1;
+    grid-row: 4 / span 2;
     text-align: right;
     background-color: transparent;
-    padding: 10px;
+    padding: 15px;
+    height: 35px;
   }
 }
 
@@ -188,19 +189,16 @@ body {
 @media (min-width: 768px) and (orientation: landscape) {
   .item1 {
     grid-column: 7/ span 12;
-    grid-row: 3 / span 23;
+    grid-row: 4 / span 28;
     text-align: center;
     margin: 0%;
     padding: 50px 20px;
   }
   .item1 h1 {
     margin: 0%;
-    padding: 0px 30px 15px 30px;
+    padding: 10px 30px 15px 30px;
     text-align: center;
-    /* text-transform: uppercase; */
-    letter-spacing: 2px;
-    /* color: #382e1d;  */
-    
+    letter-spacing: 2px;    
     font-size: 60px;
   }
   .item1 p {
@@ -270,7 +268,7 @@ body {
   }
   .item3 {  
     grid-column: 19/ span 1;
-    grid-row: 18 / span 5;
+    grid-row: 25 / span 4;
     color: #2f3a44;
     /* background-color: #728ea6de; */
     margin: 0%;
@@ -290,7 +288,7 @@ body {
 /* the yellow gallery box on the bottom */
 .item4 {
   grid-column: 6 / span 14;
-  grid-row: 53 / span 2;
+  grid-row: 53/ span 2;
   background-color: #b3a169ea;
   color:  rgb(73, 62, 34);
   font-size: 53px;
@@ -321,17 +319,16 @@ body {
   .item4 {
     display: inline-block;
     grid-column: 13/ span 5;
-    grid-row: 25 / span 2;
+    grid-row: 31 / span 2;
     text-transform: capitalize;
     font-size: 30px;
     text-decoration: none;
     text-align: center;
-    /* Font-Family: 'Fira Sans', Sans-Serif; */
     font-family: 'Cormorant Garamond', Serif;
-    line-height: 80px;
+    line-height: 70px;
     letter-spacing: 5px;
+    margin: 15px;
 
-    /* background-color: rgb(231, 196, 107); */
   }
 }
 
@@ -357,7 +354,7 @@ body {
 @media (min-width: 768px)  and (orientation: landscape) {
   .foot {
     grid-column: 1 / span 24;
-    grid-row: 32 / span 2;
+    grid-row: 37 / span 2;
   }
   .footerTxt {
     padding: 3% 0% 0% 0%;
