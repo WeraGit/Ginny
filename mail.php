@@ -118,7 +118,7 @@ $mailheader = "From: $email";
             </p>
 
             <div class="social">
-              <a href="https://www.facebook.com/virginia.whiting.1"><img class="socialIcon" src="media/face.webp"></a>
+              <a href="https://www.facebook.com/ginnywhiting09"><img class="socialIcon" src="media/face.webp"></a>
               &nbsp;facebook account
               <br>
               <a href="https://z-p42.www.instagram.com/virginiawhiting/"><img class="socialIcon" src="media/insta.webp"></a>
