@@ -41,13 +41,13 @@ p {
 }
 
 body {
-  background-color: rgb(245, 237, 226);
-  height: 2500px;
+  /* background-color: rgb(245, 237, 226); */
+  background-color: whitesmoke;
+  height: 7600px;
 }
 
 @media (min-width: 768px) and (orientation: landscape) {
   body {
-    background-color: white;
     height: 4300px;
   }
 }
@@ -56,8 +56,8 @@ body {
 .containerMain {
   display: grid;
   grid-template-columns: repeat(24, 1fr) ;
-  grid-template-rows: repeat(2, 1fr) repeat(50, 50px) repeat(2, 1fr);
-  height: 2750px;
+  grid-template-rows: repeat(2, 1fr) repeat(152, 50px) repeat(2, 1fr);
+  height: 7600px;
   width: 100%;
 }
 
@@ -75,7 +75,7 @@ body {
 
 .banner {
   grid-column: 1/ span 24;  
-  grid-row: 1 / span 10;
+  grid-row: 3 / span 10;
   background-image: url(../media/landscapes/Farm\ on\ the\ Chase\ website.jpg);
   background-position: center;
   background-repeat: no-repeat; 
@@ -92,7 +92,7 @@ body {
 
 .item1 {
   grid-column: 7/ span 12;
-  grid-row: 3 / span 4;
+  grid-row: 5 / span 4;
   /* background-color: #585B46df; */
   background-color: #6f7458af;
   color: black;   
@@ -133,7 +133,7 @@ body {
 /* social icons on the top right  */
 .social {
   grid-column: 16/ span 3;  
-  grid-row: 3 / span 2;
+  grid-row: 5 / span 2;
   text-align: right;
   background-color: transparent;
   z-index: 5;
@@ -158,7 +158,7 @@ body {
 /* home icon */
 .home {
   grid-column: 7/ span 2;  
-  grid-row: 3 / span 2;
+  grid-row: 5 / span 2;
   z-index: 5;
   margin: 0%;
   padding: 15px 20px;
@@ -189,7 +189,7 @@ body {
 /* the yellow gallery box on the bottom */
 .item4 {
   grid-column: 7 / span 12;
-  grid-row: 7 / span 2;
+  grid-row: 9 / span 2;
   background-color: #D9BF73ef;
   color: black;
   text-transform: capitalize;
@@ -268,9 +268,9 @@ img.darkableImage:hover {
   margin: 0%;
   padding: 15px;
   width: 300px;
-  background-color: rgba(245, 222, 179, 0.418);
-  font-size: 45px;
-  letter-spacing: 2px;
+  background-color: rgba(231, 231, 231, 0.692);
+  font-size: 30px;
+  /* letter-spacing: 2px; */
 }
 
 
@@ -294,7 +294,7 @@ img.darkableImage:hover {
 
 
 .one {
-  grid-row: 1 / span 8;
+  grid-row: 16 / span 8;
 }
 @media (min-width: 768px)  and (orientation: landscape) {
   .one {
@@ -302,7 +302,7 @@ img.darkableImage:hover {
   }
 }
 .two {
-  grid-row: 23 / span 8;
+  grid-row: 26 / span 8;
 }
 @media (min-width: 768px)  and (orientation: landscape) {
   .two {
@@ -310,7 +310,7 @@ img.darkableImage:hover {
   }
 }
 .three {
-  grid-row: 46 / span 8;
+  grid-row: 36 / span 8;
 }
 @media (min-width: 768px)  and (orientation: landscape) {
   .three {
@@ -318,7 +318,7 @@ img.darkableImage:hover {
   }
 }
 .four {
-  grid-row: 69 / span 8;
+  grid-row: 46 / span 8;
 }
 @media (min-width: 768px)  and (orientation: landscape) {
   .four {
@@ -326,7 +326,7 @@ img.darkableImage:hover {
   }
 }
 .five {
-  grid-row: 75 / span 8;
+  grid-row: 56 / span 8;
 }
 @media (min-width: 768px)  and (orientation: landscape) {
   .five {
@@ -334,7 +334,7 @@ img.darkableImage:hover {
   }
 }
 .six {
-  grid-row: 100 / span 8;
+  grid-row: 66 / span 8;
 }
 @media (min-width: 768px)  and (orientation: landscape) {
   .six {
@@ -342,7 +342,7 @@ img.darkableImage:hover {
   }
 }
 .seven {
-  grid-row: 120 / span 8;
+  grid-row: 76 / span 8;
 }
 @media (min-width: 768px)  and (orientation: landscape) {
   .seven {
@@ -350,7 +350,7 @@ img.darkableImage:hover {
   }
 }
 .eight {
-  grid-row: 140 / span 8;
+  grid-row: 86 / span 8;
 }
 @media (min-width: 768px)  and (orientation: landscape) {
   .eight {
@@ -358,7 +358,7 @@ img.darkableImage:hover {
   }
 }
 .nine {
-  grid-row: 160 / span 8;
+  grid-row: 96 / span 8;
 }
 @media (min-width: 768px)  and (orientation: landscape) {
   .nine {
@@ -366,7 +366,7 @@ img.darkableImage:hover {
   }
 }
 .ten {
-  grid-row: 180 / span 8;
+  grid-row: 106 / span 8;
 }
 @media (min-width: 768px)  and (orientation: landscape) {
   .ten {
@@ -374,7 +374,7 @@ img.darkableImage:hover {
   }
 }
 .eleven {
-  grid-row: 200 / span 8;
+  grid-row: 116 / span 8;
 }
 @media (min-width: 768px)  and (orientation: landscape) {
   .eleven {
@@ -382,7 +382,7 @@ img.darkableImage:hover {
   }
 }
 .twelve {
-  grid-row: 210 / span 8;
+  grid-row: 126 / span 8;
 }
 @media (min-width: 768px)  and (orientation: landscape) {
   .twelve {
@@ -390,7 +390,7 @@ img.darkableImage:hover {
   }
 }
 .thirteen {
-  grid-row: 230 / span 8;
+  grid-row: 136 / span 8;
 }
 @media (min-width: 768px)  and (orientation: landscape) {
   .thirteen {
@@ -398,7 +398,7 @@ img.darkableImage:hover {
   }
 }
 .fourteen {
-  grid-row: 245 / span 8;
+  grid-row: 146 / span 8;
 }
 @media (min-width: 768px)  and (orientation: landscape) {
   .fourteen {
@@ -415,7 +415,7 @@ img.darkableImage:hover {
 
 .foot {
   grid-column: 1 / span 24;
-  grid-row: 54 / span 1;
+  grid-row: 156 / span 1;
   /* background-image: linear-gradient(to bottom, #c9d2d300, #7799B6); */
   color: black;
   text-align: center;
