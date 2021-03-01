@@ -43,12 +43,12 @@ p {
 body {
   /* background-color: rgb(245, 237, 226); */
   background-color: whitesmoke;
-  height: 5800px;
+  height: 7600px;
 }
 
 @media (min-width: 768px) and (orientation: landscape) {
   body {
-    height: 3200px;
+    height: 5300px;
   }
 }
 
@@ -56,8 +56,8 @@ body {
 .containerMain {
   display: grid;
   grid-template-columns: repeat(24, 1fr) ;
-  grid-template-rows: repeat(2, 1fr) repeat(116, 50px) repeat(2, 1fr);
-  height: 5800px;
+  grid-template-rows: repeat(2, 1fr) repeat(152, 50px) repeat(2, 1fr);
+  height: 7600px;
   width: 100%;
 }
 
@@ -66,8 +66,8 @@ body {
   .containerMain {
     display: grid;
     grid-template-columns: repeat(5, 1fr) repeat(14, 55px) repeat(5, 1fr) ;
-    grid-template-rows: repeat(80, 40px) repeat(4, 1fr);
-    height: 3200px;
+    grid-template-rows: repeat(130, 40px) repeat(4, 1fr);
+    height: 5300px;
     width: 100%;
   }
 }
@@ -76,7 +76,7 @@ body {
 .banner {
   grid-column: 1/ span 24;  
   grid-row: 3 / span 10;
-  background-image: url(../media/seascapes/Kimmeridge\ Ledges\ website.jpg);
+  background-image: url(../media/4.jpeg);
   background-position: center;
   background-repeat: no-repeat; 
   background-size: cover;
@@ -94,7 +94,7 @@ body {
   grid-column: 7/ span 12;
   grid-row: 5 / span 4;
   /* background-color: #585B46df; */
-  background-color: #BCAFA7af;
+  background-color: #81817Caf;
   color: black;   
   margin: 0%;
   line-height: 200px;
@@ -186,7 +186,6 @@ body {
   }
 }
 
-
 .contactMob {
   display: inline-block;
 }
@@ -196,7 +195,7 @@ body {
 .item3 {
   grid-column: 7 / span 12;
   grid-row: 11 / span 1;
-  background-color: #a7bbbcaf;
+  background-color: #8d8c6d7e;
   color: black;
   line-height: 50px;
   text-transform: capitalize;
@@ -235,7 +234,6 @@ body {
     font-weight: 600;
   }  
 }
-
 
 /* the yellow gallery box on the bottom */
 .item4 {
@@ -456,6 +454,30 @@ img.darkableImage:hover {
     grid-row: 91 / span 10;
   }
 }
+.fifteen {
+  grid-row: 156 / span 8;
+}
+@media (min-width: 768px)  and (orientation: landscape) {
+  .fifteen {
+    grid-row: 104 / span 10;
+  }
+}
+.sixteen {
+  grid-row: 166 / span 8;
+}
+@media (min-width: 768px)  and (orientation: landscape) {
+  .sixteen {
+    grid-row: 104 / span 10;
+  }
+}
+.seventeen {
+  grid-row: 176 / span 8;
+}
+@media (min-width: 768px)  and (orientation: landscape) {
+  .seventeen {
+    grid-row: 117 / span 10;
+  }
+}
 
 
 
@@ -466,7 +488,7 @@ img.darkableImage:hover {
 
 .foot {
   grid-column: 1 / span 24;
-  grid-row: 119 / span 1;
+  grid-row: 156 / span 1;
   /* background-image: linear-gradient(to bottom, #c9d2d300, #7799B6); */
   color: black;
   text-align: center;
@@ -483,6 +505,6 @@ img.darkableImage:hover {
 }
 @media (min-width: 768px)  and (orientation: landscape) {
   .foot {
-    grid-row: 78 / span 4;
+    grid-row: 130 / span 4;
   }
 }

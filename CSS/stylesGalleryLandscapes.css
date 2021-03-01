@@ -186,6 +186,55 @@ body {
   }
 }
 
+.contactMob {
+  display: inline-block;
+}
+.contactDesk {
+  display: none; 
+}
+.item3 {
+  grid-column: 7 / span 12;
+  grid-row: 11 / span 1;
+  background-color: #8d8c6d7e;
+  color: black;
+  line-height: 50px;
+  text-transform: capitalize;
+  font-size: 38px;
+  text-align: center;
+  text-decoration: none;
+  font-family: 'Cormorant Garamond', Serif;
+  transition: color 1s, background-color 2s;
+  -webkit-animation: fadein 4s; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadein 4s; /* Firefox < 16 */
+   -ms-animation: fadein 4s; /* Internet Explorer */
+    -o-animation: fadein 4s; /* Opera < 12.1 */
+       animation: fadein 4s;
+}
+.item3:hover {
+  color: #0b0d0f;
+  background-color: #637a8f;
+}
+
+
+/* for desktop */
+@media (min-width: 768px) and (orientation: landscape){
+  .contactMob {
+    display: none;
+  }
+  .contactDesk {
+   display: inline-block; 
+  }
+  .item3 {
+    grid-column: 19/ span 1;
+    grid-row: 3 / span 4;
+    margin: 0%;
+    padding-top: 15px;
+    line-height: 18px;
+    font-size: 16px;
+    font-weight: 600;
+  }  
+}
+
 /* the yellow gallery box on the bottom */
 .item4 {
   grid-column: 7 / span 12;
