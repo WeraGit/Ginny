@@ -18,7 +18,8 @@
   <div class="banner"></div>
 
   <div class="home fourS">
-    <a href="index.html"><img class="homeIcon" src="./media/home.png" ></a>
+    <a href="gallery.html"><img class="homeIcon" src="./media/back.png" ></a>
+    <!-- <a href="index.html"><img class="homeIcon" src="./media/home.png" ></a> -->
   </div>
 
   <!-- social media links -->
@@ -49,74 +50,78 @@
 
 
   <div class="one typePainting fourS left" >
-    <img src= "media/abstract/a6.jpeg" class="darkableImage">
+    <img onclick="onClick(this)" src= "media/abstract/a6.jpeg" class="darkableImage">
     <h1 class="centerTxt">A6</h1>
   </div>
   <div class="two typePainting fourS right" >
-    <img src= "media/abstract/Autumn Hedgerow.JPG" class="darkableImage">
+    <img onclick="onClick(this)" src= "media/abstract/Autumn Hedgerow.JPG" class="darkableImage">
     <h1 class="centerTxt">Autumn Hedgerow</h1>
   </div>
   <div class="three typePainting fourS left" >
-    <img src= "media/abstract/Cruciform.jpg" class="darkableImage">
+    <img onclick="onClick(this)" src= "media/abstract/Cruciform.jpg" class="darkableImage">
     <h1 class="centerTxt">Cruciform</h1>
   </div>
   <div class="four typePainting fourS right" >
-    <img src= "media/abstract/Fissure3.jpg" class="darkableImage">
+    <img onclick="onClick(this)" src= "media/abstract/Fissure3.jpg" class="darkableImage">
     <h1 class="centerTxt">Fissure3</h1>
   </div>
   <div class="five typePainting fourS left" >
-    <img src= "media/abstract/Fissure4.jpg" class="darkableImage">
+    <img onclick="onClick(this)" src= "media/abstract/Fissure4.jpg" class="darkableImage">
     <h1 class="centerTxt">Fissure4</h1>
   </div>
   <div class="six typePainting fourS right" >
-    <img src= "media/abstract/Fissure5.jpg" class="darkableImage">
+    <img onclick="onClick(this)" src= "media/abstract/Fissure5.jpg" class="darkableImage">
     <h1 class="centerTxt">Fissure5</h1>
   </div>
   <div class="seven typePainting fourS left" >
-    <img src= "media/abstract/Forest Sunrise.jpg" class="darkableImage">
+    <img onclick="onClick(this)" src= "media/abstract/Forest Sunrise.jpg" class="darkableImage">
     <h1 class="centerTxt">Forest Sunrise</h1>
   </div>  
   <div class="eight typePainting fourS right" >
-    <img src= "media/abstract/Fissure website.jpg" class="darkableImage">
+    <img onclick="onClick(this)" src= "media/abstract/Fissure website.jpg" class="darkableImage">
     <h1 class="centerTxt">Fissure</h1>
   </div>
   <div class="nine typePainting fourS left" >
-    <img src= "media/abstract/Fissure2.jpg" class="darkableImage">
+    <img onclick="onClick(this)" src= "media/abstract/Fissure2.jpg" class="darkableImage">
     <h1 class="centerTxt">Fissure2</h1>
   </div>
   <div class="ten typePainting fourS right" >
-    <img src= "media/abstract/ForestSunrise2.jpg" class="darkableImage">
+    <img onclick="onClick(this)" src= "media/abstract/ForestSunrise2.jpg" class="darkableImage">
     <h1 class="centerTxt">Forest Sunrise2</h1>
   </div>
   <div class="eleven typePainting fourS left" >
-    <img src= "media/abstract/Jetty website.jpg" class="darkableImage">
+    <img onclick="onClick(this)" src= "media/abstract/Jetty website.jpg" class="darkableImage">
     <h1 class="centerTxt">Jetty</h1>
   </div>
   <div class="twelve typePainting fourS right" >
-    <img src= "media/abstract/Kavachi's Oven.jpg" class="darkableImage">
+    <img onclick="onClick(this)" src= "media/abstract/Kavachi's Oven.jpg" class="darkableImage">
     <h1 class="centerTxt">Kavachi's Oven</h1>
   </div>
   <div class="thirteen typePainting fourS left" >
-    <img src= "media/abstract/Kynance website.jpg" class="darkableImage">
+    <img onclick="onClick(this)" src= "media/abstract/Kynance website.jpg" class="darkableImage">
     <h1 class="centerTxt">Kynance</h1>
   </div>
   <div class="fourteen typePainting fourS right" >
-    <img src= "media/abstract/Reflections.jpg" class="darkableImage">
+    <img onclick="onClick(this)" src= "media/abstract/Reflections.jpg" class="darkableImage">
     <h1 class="centerTxt">Reflections</h1>
   </div>
   <div class="fifteen typePainting fourS left" >
-    <img src= "media/abstract/Spring Impressions 1.jpg" class="darkableImage">
+    <img onclick="onClick(this)" src= "media/abstract/Spring Impressions 1.jpg" class="darkableImage">
     <h1 class="centerTxt">Spring Impressions 1</h1>
   </div>
   <div class="sixteen typePainting fourS right" >
-    <img src= "media/abstract/Spring Impressions 2.jpg" class="darkableImage">
+    <img onclick="onClick(this)" src= "media/abstract/Spring Impressions 2.jpg" class="darkableImage">
     <h1 class="centerTxt">Spring Impressions 2</h1>
   </div>
   <div class="seventeen typePainting fourS left" >
-    <img src= "media/abstract/Spring Impressions 3.jpg" class="darkableImage">
+    <img onclick="onClick(this)" src= "media/abstract/Spring Impressions 3.jpg" class="darkableImage">
     <h1 class="centerTxt">Spring Impressions 3</h1>
   </div>
-
+    <!-- The Modal -->
+    <div id="myModal" class="modal" onclick="this.style.display='none'">
+      <span class="close">&times;</span>
+      <img class="modal-content" id="img01">
+    </div>
 
 
 
@@ -139,6 +144,12 @@
 
 <!-- <script src="./JS/jquery-3.2.1.min.js"></script>
 <script src="./JS/script.js"></script> -->
+<script>
+  function onClick(element) {
+    document.getElementById("img01").src = element.src;
+    document.getElementById("myModal").style.display = "block";
+  }
+  </script>
 
 </body>
 

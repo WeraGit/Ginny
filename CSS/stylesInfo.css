@@ -40,11 +40,12 @@ p {
 }
 
 body {
-  background-image: url(../media/13.PNG);
+  background-image: url(../media/14.PNG);
   background-position: center;
   background-repeat: no-repeat; /* Do not repeat the image */
   background-size: cover; /* Resize the background image to cover the entire container */
   height: 3500px;
+
 }
 
 @media (min-width: 768px) and (orientation: landscape) {
@@ -149,7 +150,8 @@ body {
   grid-column: 6/ span 14;
   grid-row: 4 / span 49;
   background-color: #c9d2d3a6;  
-  color: #162024;
+  /* color: #162024; */
+  color: black;
   margin: 0%;
   padding: 50px 20px;
   text-align: center;
@@ -193,7 +195,7 @@ body {
 @media (min-width: 768px) and (orientation: landscape) {
   .item1 {
     grid-column: 7/ span 12;
-    grid-row: 4 / span 28;
+    grid-row: 4 / span 30;
     text-align: center;
     margin: 0%;
     padding: 50px 20px;
@@ -210,7 +212,7 @@ body {
     padding: 10px 30px 5px 30px;
     text-align: justify;
     line-height: 30px;
-    font-size: 15px;
+    font-size: 17px;
   }
   .bike {
     width: 555px;
@@ -323,7 +325,7 @@ body {
   .item4 {
     display: inline-block;
     grid-column: 13/ span 5;
-    grid-row: 31 / span 2;
+    grid-row: 33 / span 2;
     text-transform: capitalize;
     font-size: 30px;
     text-decoration: none;

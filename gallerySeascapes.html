@@ -18,7 +18,8 @@
   <div class="banner"></div>
 
   <div class="home fourS">
-    <a href="index.html"><img class="homeIcon" src="./media/home.png" ></a>
+    <a href="gallery.html"><img class="homeIcon" src="./media/back.png" ></a>
+    <!-- <a href="index.html"><img class="homeIcon" src="./media/home.png" ></a> -->
   </div>
 
   <!-- social media links -->
@@ -49,43 +50,43 @@
 
 
   <div class="one typePainting fourS left" >
-    <img src= "media/seascapes/Afternoon Light Kimmeridge website.jpg" class="darkableImage">
+    <img onclick="onClick(this)" src= "media/seascapes/Afternoon Light Kimmeridge website.jpg" class="darkableImage">
     <h1 class="centerTxt">Afternoon Light Kimmeridge</h1>
   </div>
   <div class="two typePainting fourS right" >
-    <img src= "media/seascapes/Foreshore website.jpg" class="darkableImage">
+    <img onclick="onClick(this)" src= "media/seascapes/Foreshore website.jpg" class="darkableImage">
     <h1 class="centerTxt">Foreshore</h1>
   </div>
   <div class="three typePainting fourS left" >
-    <img src= "media/seascapes/High Tide website.jpg" class="darkableImage">
+    <img onclick="onClick(this)" src= "media/seascapes/High Tide website.jpg" class="darkableImage">
     <h1 class="centerTxt">High Tide</h1>
   </div>
   <div class="four typePainting fourS right" >
-    <img src= "media/seascapes/Kimmeridge Ledges website.jpg" class="darkableImage">
+    <img onclick="onClick(this)" src= "media/seascapes/Kimmeridge Ledges website.jpg" class="darkableImage">
     <h1 class="centerTxt">Kimmeridge Ledges</h1>
   </div>
   <div class="five typePainting fourS left" >
-    <img src= "media/seascapes/Offshore Wind Hengistbury Head.jpeg" class="darkableImage">
+    <img onclick="onClick(this)" src= "media/seascapes/Offshore Wind Hengistbury Head.jpeg" class="darkableImage">
     <h1 class="centerTxt">Offshore Wind Hengistbury Head</h1>
   </div>
   <div class="six typePainting fourS right" >
-    <img src= "media/seascapes/Offshore Wind Mawgan Porth website.jpg" class="darkableImage">
+    <img onclick="onClick(this)" src= "media/seascapes/Offshore Wind Mawgan Porth website.jpg" class="darkableImage">
     <h1 class="centerTxt">Offshore Wind Mawgan Porth</h1>
   </div>
   <div class="seven typePainting fourS left" >
-    <img src= "media/seascapes/Pendower website.jpg" class="darkableImage">
+    <img onclick="onClick(this)" src= "media/seascapes/Pendower website.jpg" class="darkableImage">
     <h1 class="centerTxt">Pendower</h1>
   </div>
   <div class="eight typePainting fourS right" >
-    <img src= "media/seascapes/Rocky Bay website.jpg" class="darkableImage">
+    <img onclick="onClick(this)" src= "media/seascapes/Rocky Bay website.jpg" class="darkableImage">
     <h1 class="centerTxt">Rocky Bay</h1>
   </div>
   <div class="nine typePainting fourS left" >
-    <img src= "media/seascapes/Summer Sea.jpeg" class="darkableImage">
+    <img onclick="onClick(this)" src= "media/seascapes/Summer Sea.jpeg" class="darkableImage">
     <h1 class="centerTxt">Summer Sea</h1>
   </div>
   <div class="ten typePainting fourS right" >
-    <img src= "media/seascapes/View from the Cliff website.jpg" class="darkableImage">
+    <img onclick="onClick(this)" src= "media/seascapes/View from the Cliff website.jpg" class="darkableImage">
     <h1 class="centerTxt">Spring on the Chase</h1>
   </div>
   <!-- <div class="eleven typePainting fourS left" >
@@ -106,6 +107,11 @@
   </div> -->
 
 
+    <!-- The Modal -->
+<div id="myModal" class="modal" onclick="this.style.display='none'">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="img01">
+</div>
 
 
   <footer class="foot">
@@ -127,6 +133,12 @@
 
 <!-- <script src="./JS/jquery-3.2.1.min.js"></script>
 <script src="./JS/script.js"></script> -->
+<script>
+  function onClick(element) {
+    document.getElementById("img01").src = element.src;
+    document.getElementById("myModal").style.display = "block";
+  }
+  </script>
 
 </body>
 

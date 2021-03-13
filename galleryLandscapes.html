@@ -18,8 +18,9 @@
   <div class="banner"></div>
 
   <div class="home fourS">
-    <a href="index.html"><img class="homeIcon" src="./media/home.png" ></a>
-  </div>
+    <a href="gallery.html"><img class="homeIcon" src="./media/back.png" ></a>
+    <!-- <a href="index.html"><img class="homeIcon" src="./media/home.png" ></a> -->
+    </div>
 
   <!-- social media links -->
   <div class="social fourS">
@@ -49,62 +50,67 @@
 
 
   <div class="one typePainting fourS left" >
-    <img src= "media/landscapes/Above Sauzé 2 website.jpg" class="darkableImage">
-    <h1 class="centerTxt">Above Sauzé 2</h1>
+    <img onclick="onClick(this)" src= "media/landscapes/Farm on the Chase website.jpg" class="darkableImage">
+    <h1 class="centerTxt">Farm on the Chase</h1>
   </div>
   <div class="two typePainting fourS right" >
-    <img src= "media/landscapes/Autumn Birches website.jpg" class="darkableImage">
+    <img  onclick="onClick(this)" src= "media/landscapes/Autumn Birches website.jpg" class="darkableImage">
     <h1 class="centerTxt">Autumn Birches</h1>
   </div>
   <div class="three typePainting fourS left" >
-    <img src= "media/landscapes/Farm on the Chase website.jpg" class="darkableImage">
-    <h1 class="centerTxt">Farm on the Chase</h1>
+    <img onclick="onClick(this)" src= "media/landscapes/Spring on the Chase website.jpg" class="darkableImage">
+    <h1 class="centerTxt">Spring on the Chase</h1>
   </div>
   <div class="four typePainting fourS right" >
-    <img src= "media/landscapes/Flooded Water - meadows.jpg" class="darkableImage">
+    <img onclick="onClick(this)" src= "media/landscapes/Flooded Water - meadows.jpg" class="darkableImage">
     <h1 class="centerTxt">Flooded Water - meadows</h1>
   </div>
   <div class="five typePainting fourS left" >
-    <img src= "media/landscapes/Godshill - Autumn website.jpg" class="darkableImage">
+    <img onclick="onClick(this)" src= "media/landscapes/Godshill - Autumn website.jpg" class="darkableImage">
     <h1 class="centerTxt">Godshill - Autumn</h1>
   </div>
   <div class="six typePainting fourS right" >
-    <img src= "media/landscapes/Impressions of Spring - Garston Wood website.jpg" class="darkableImage">
+    <img onclick="onClick(this)" src= "media/landscapes/Impressions of Spring - Garston Wood website.jpg" class="darkableImage">
     <h1 class="centerTxt">Impressions of Spring - Garston Wood</h1>
   </div>
   <div class="seven typePainting fourS left" >
-    <img src= "media/landscapes/July on the Forest.jpg" class="darkableImage">
+    <img onclick="onClick(this)" src= "media/landscapes/July on the Forest.jpg" class="darkableImage">
     <h1 class="centerTxt">July on the Forest</h1>
   </div>
   <div class="eight typePainting fourS right" >
-    <img src= "media/landscapes/Shades of Autumn - Godshill Website.jpg" class="darkableImage">
+    <img onclick="onClick(this)" src= "media/landscapes/Shades of Autumn - Godshill Website.jpg" class="darkableImage">
     <h1 class="centerTxt">Shades of Autumn - Godshill</h1>
   </div>
   <div class="nine typePainting fourS left" >
-    <img src= "media/landscapes/Snowdrops at Rockbourne websitejpg.jpg" class="darkableImage">
+    <img onclick="onClick(this)" src= "media/landscapes/Snowdrops at Rockbourne websitejpg.jpg" class="darkableImage">
     <h1 class="centerTxt">Snowdrops at Rockbourne</h1>
   </div>
   <div class="ten typePainting fourS right" >
-    <img src= "media/landscapes/Spring on the Chase website.jpg" class="darkableImage">
-    <h1 class="centerTxt">Spring on the Chase</h1>
+    <img onclick="onClick(this)" src= "media/landscapes/Above Sauzé 2 website.jpg" class="darkableImage">
+    <h1 class="centerTxt">Above Sauzé 2</h1>
   </div>
   <div class="eleven typePainting fourS left" >
-    <img src= "media/landscapes/Summer on the Chase website.jpg" class="darkableImage">
+    <img onclick="onClick(this)" src= "media/landscapes/Summer on the Chase website.jpg" class="darkableImage">
     <h1 class="centerTxt">Summer on the Chase</h1>
   </div>
   <div class="twelve typePainting fourS right" >
-    <img src= "media/landscapes/The Old Bridge website.jpg" class="darkableImage">
+    <img onclick="onClick(this)" src= "media/landscapes/The Old Bridge website.jpg" class="darkableImage">
     <h1 class="centerTxt">The Old Bridge</h1>
   </div>
   <div class="thirteen typePainting fourS left" >
-    <img src= "media/landscapes/View from the Church Sauze website.jpg" class="darkableImage">
+    <img onclick="onClick(this)" src= "media/landscapes/View from the Church Sauze website.jpg" class="darkableImage">
     <h1 class="centerTxt">View from the Church Sauze</h1>
   </div>
   <div class="fourteen typePainting fourS right" >
-    <img src= "media/landscapes/Winter on the Chase website.jpg" class="darkableImage">
+    <img onclick="onClick(this)" src= "media/landscapes/Winter on the Chase website.jpg" class="darkableImage">
     <h1 class="centerTxt">Winter on the Chase</h1>
   </div>
 
+  <!-- The Modal -->
+<div id="myModal" class="modal" onclick="this.style.display='none'">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="img01">
+</div>
 
 
 
@@ -127,6 +133,13 @@
 
 <!-- <script src="./JS/jquery-3.2.1.min.js"></script>
 <script src="./JS/script.js"></script> -->
+  <!-- div2 modal script:  -->
+  <script>
+    function onClick(element) {
+      document.getElementById("img01").src = element.src;
+      document.getElementById("myModal").style.display = "block";
+    }
+    </script>
 
 </body>
 

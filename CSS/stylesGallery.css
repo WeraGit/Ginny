@@ -41,13 +41,12 @@ p {
 }
 
 body {
-  background-color: rgb(245, 237, 226);
+  background-color: whitesmoke;
   height: 2500px;
 }
 
 @media (min-width: 768px) and (orientation: landscape) {
   body {
-    background-color: white;
     height: 1500px;
   }
 }
@@ -191,21 +190,22 @@ body {
 }
 
 /* contact box on the right or bottom in mobile version */
-.contactMob {
+/* .contactMob {
   display: inline-block;
 }
 .contactDesk {
   display: none; 
-}
+} */
 
 .item3 {
   grid-column: 7 / span 12;
   grid-row: 9 / span 1;
+  
   color: #2f3a44;
   background-color: #728ea6de;
-  line-height: 40px;
+  line-height: 50px;
   text-transform: capitalize;
-  font-size: 38px;
+  font-size: 32px;
   text-align: center;
   text-decoration: none;
   font-family: 'Cormorant Garamond', Serif;
@@ -224,20 +224,17 @@ body {
 
 /* for desktop */
 @media (min-width: 768px) and (orientation: landscape){
-  .contactMob {
+  /* .contactMob {
     display: none;
   }
   .contactDesk {
    display: inline-block; 
-  }
+  } */
   .item3 {
-    grid-column: 19/ span 1;
-    grid-row: 3 / span 4;
-    margin: 0%;
-    padding-top: 15px;
-    line-height: 18px;
-    font-size: 16px;
-    font-weight: 600;
+    grid-column: 11/ span 4;
+    grid-row: 8 / span 1;
+    font-size: 29px;
+    line-height: 40px;
   }  
 }
 
@@ -252,6 +249,7 @@ body {
   text-decoration: none;
   text-align: center;
   font-family: 'Cormorant Garamond', Serif;
+  /* Font-Family: 'Fira Sans', Sans-Serif; */
   line-height: 100px;
   letter-spacing: 5px;
   transition: color 1s, background-color 2s;
@@ -276,7 +274,6 @@ body {
     font-size: 35px;
     text-decoration: none;
     text-align: center;
-    font-family: 'Cormorant Garamond', Serif;
     letter-spacing: 2px;
     line-height: 80px;
   }
@@ -311,6 +308,7 @@ img.darkableImage {
   height: 100%;
   opacity:1;
   filter:alpha(opacity=100);
+  transition: opacity 1s;
 }
 img.darkableImage:hover {
   opacity:0.8;
@@ -324,7 +322,7 @@ img.darkableImage:hover {
   margin: 0%;
   padding: 15px;
   width: 300px;
-  background-color: rgba(245, 222, 179, 0.418);
+  background-color: rgba(226, 226, 226, 0.418);
   font-size: 45px;
   letter-spacing: 2px;
 }
