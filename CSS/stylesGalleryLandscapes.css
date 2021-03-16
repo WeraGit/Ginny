@@ -291,7 +291,12 @@ img.darkableImage:hover {
   background-color: rgba(231, 231, 231, 0.692);
   font-size: 30px;
 }
-
+.status {
+  color: rgba(0, 0, 0, 0.733);
+  font-family: 'Fira Sans', Sans-Serif;
+  font-size: 20px;
+  /* float: right; */
+}
 @media (min-width: 768px)  and (orientation: landscape) {
   .left {
     grid-column: 4/ span 8;

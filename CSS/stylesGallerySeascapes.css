@@ -34,11 +34,11 @@ p {
 
 body {
   background-color: whitesmoke;
-  height: 5800px;
+  height: 4900px;
 }
 @media (min-width: 768px) and (orientation: landscape) {
   body {
-    height: 3200px;
+    height: 2600px;
   }
 }
 
@@ -46,8 +46,8 @@ body {
 .containerMain {
   display: grid;
   grid-template-columns: repeat(24, 1fr) ;
-  grid-template-rows: repeat(2, 1fr) repeat(116, 50px) repeat(2, 1fr);
-  height: 5800px;
+  grid-template-rows: repeat(2, 1fr) repeat(98, 50px) repeat(2, 1fr);
+  height: 4900px;
   width: 100%;
 }
 /* for desktop */
@@ -55,8 +55,8 @@ body {
   .containerMain {
     display: grid;
     grid-template-columns: repeat(5, 1fr) repeat(14, 55px) repeat(5, 1fr) ;
-    grid-template-rows: repeat(80, 40px) repeat(4, 1fr);
-    height: 3200px;
+    grid-template-rows: repeat(65, 40px) repeat(4, 1fr);
+    height: 2600px;
   }
 }
 
@@ -431,7 +431,7 @@ img.darkableImage:hover {
 
 .foot {
   grid-column: 1 / span 24;
-  grid-row: 119 / span 1;
+  grid-row: 98 / span 1;
   color: black;
   text-align: center;
 }
@@ -447,7 +447,7 @@ img.darkableImage:hover {
 }
 @media (min-width: 768px)  and (orientation: landscape) {
   .foot {
-    grid-row: 78 / span 4;
+    grid-row: 65 / span 4;
   }
 }
 

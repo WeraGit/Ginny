@@ -36,11 +36,11 @@ p {
 body {
   /* background-color: rgb(245, 237, 226); */
   background-color: whitesmoke;
-  height: 5800px;
+  height: 2700px;
 }
 @media (min-width: 768px) and (orientation: landscape) {
   body {
-    height: 3200px;
+    height: 1600px;
   }
 }
 
@@ -48,8 +48,8 @@ body {
 .containerMain {
   display: grid;
   grid-template-columns: repeat(24, 1fr) ;
-  grid-template-rows: repeat(2, 1fr) repeat(116, 50px) repeat(2, 1fr);
-  height: 5800px;
+  grid-template-rows: repeat(2, 1fr) repeat(54, 50px) repeat(2, 1fr);
+  height: 2700px;
   width: 100%;
 }
 /* for desktop */
@@ -57,8 +57,8 @@ body {
   .containerMain {
     display: grid;
     grid-template-columns: repeat(5, 1fr) repeat(14, 55px) repeat(5, 1fr) ;
-    grid-template-rows: repeat(80, 40px) repeat(4, 1fr);
-    height: 3200px;
+    grid-template-rows: repeat(38, 40px) repeat(4, 1fr);
+    height: 1600px;
   }
 }
 
@@ -304,7 +304,7 @@ img.darkableImage:hover {
 }
 
 
-/* .one {
+.one {
   grid-row: 16 / span 8;
 }
 @media (min-width: 768px)  and (orientation: landscape) {
@@ -336,100 +336,17 @@ img.darkableImage:hover {
     grid-row: 26 / span 10;
   }
 }
-.five {
-  grid-row: 56 / span 8;
-}
-@media (min-width: 768px)  and (orientation: landscape) {
-  .five {
-    grid-row: 39 / span 10;
-  }
-}
-.six {
-  grid-row: 66 / span 8;
-}
-@media (min-width: 768px)  and (orientation: landscape) {
-  .six {
-    grid-row: 39 / span 10;
-  }
-}
-.seven {
-  grid-row: 76 / span 8;
-}
-@media (min-width: 768px)  and (orientation: landscape) {
-  .seven {
-    grid-row: 52 / span 10;
-  }
-}
-.eight {
-  grid-row: 86 / span 8;
-}
-@media (min-width: 768px)  and (orientation: landscape) {
-  .eight {
-    grid-row: 52 / span 10;
-  }
-}
-.nine {
-  grid-row: 96 / span 8;
-}
-@media (min-width: 768px)  and (orientation: landscape) {
-  .nine {
-    grid-row: 65 / span 10;
-  }
-}
-.ten {
-  grid-row: 106 / span 8;
-}
-@media (min-width: 768px)  and (orientation: landscape) {
-  .ten {
-    grid-row: 65 / span 10;
-  }
-}
-.eleven {
-  grid-row: 116 / span 8;
-}
-@media (min-width: 768px)  and (orientation: landscape) {
-  .eleven {
-    grid-row: 78 / span 10;
-  }
-}
-.twelve {
-  grid-row: 126 / span 8;
-}
-@media (min-width: 768px)  and (orientation: landscape) {
-  .twelve {
-    grid-row: 78 / span 10;
-  }
-}
-.thirteen {
-  grid-row: 136 / span 8;
-}
-@media (min-width: 768px)  and (orientation: landscape) {
-  .thirteen {
-    grid-row: 91 / span 10;
-  }
-}
-.fourteen {
-  grid-row: 146 / span 8;
-}
-@media (min-width: 768px)  and (orientation: landscape) {
-  .fourteen {
-    grid-row: 91 / span 10;
-  }
-} */
-
-
 
 
 
 .foot {
   grid-column: 1 / span 24;
-  grid-row: 186 / span 1;
+  grid-row: 56 / span 1;
   color: black;
   text-align: center;
 }
 .footerTxt {
   padding: 5% 0% 0% 0%;
-  /* font-weight: bold; */
   font-size: 20px;
 }
 #sigImage {
@@ -439,7 +356,7 @@ img.darkableImage:hover {
 }
 @media (min-width: 768px)  and (orientation: landscape) {
   .foot {
-    grid-row: 130 / span 4;
+    grid-row: 38 / span 4;
   }
 }
 

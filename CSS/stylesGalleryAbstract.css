@@ -34,11 +34,11 @@ p {
 
 body {
   background-color: whitesmoke;
-  height: 9300px;
+  height: 10500px;
 }
 @media (min-width: 768px) and (orientation: landscape) {
   body {
-    height: 5300px;
+    height: 5800px;
   }
 }
 
@@ -46,8 +46,8 @@ body {
 .containerMain {
   display: grid;
   grid-template-columns: repeat(24, 1fr) ;
-  grid-template-rows: repeat(2, 1fr) repeat(186, 50px) repeat(2, 1fr);
-  height: 9300px;
+  grid-template-rows: repeat(2, 1fr) repeat(210, 50px) repeat(2, 1fr);
+  height: 10500px;
   width: 100%;
 }
 /* for desktop */
@@ -55,8 +55,8 @@ body {
   .containerMain {
     display: grid;
     grid-template-columns: repeat(5, 1fr) repeat(14, 55px) repeat(5, 1fr) ;
-    grid-template-rows: repeat(130, 40px) repeat(4, 1fr);
-    height: 5300px;
+    grid-template-rows: repeat(145, 40px) repeat(4, 1fr);
+    height: 5800px;
   }
 }
 
@@ -440,7 +440,22 @@ img.darkableImage:hover {
     grid-row: 117 / span 10;
   }
 }
-
+.eighteen {
+  grid-row: 186 / span 8;
+}
+@media (min-width: 768px)  and (orientation: landscape) {
+  .eighteen {
+    grid-row: 117 / span 10;
+  }
+}
+.nineteen {
+  grid-row: 196 / span 8;
+}
+@media (min-width: 768px)  and (orientation: landscape) {
+  .nineteen {
+    grid-row: 130 / span 10;
+  }
+}
 
 
 
@@ -450,7 +465,7 @@ img.darkableImage:hover {
 
 .foot {
   grid-column: 1 / span 24;
-  grid-row: 186 / span 1;
+  grid-row: 210 / span 1;
   color: black;
   text-align: center;
 }
@@ -466,7 +481,7 @@ img.darkableImage:hover {
 }
 @media (min-width: 768px)  and (orientation: landscape) {
   .foot {
-    grid-row: 130 / span 4;
+    grid-row: 142 / span 4;
   }
 }
 
